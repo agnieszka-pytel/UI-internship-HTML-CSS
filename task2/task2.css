@@ -1,33 +1,57 @@
-input {
-    margin: 10px;
+input[type=checkbox] {
+    display: none;
+}
+
+label {
+    opacity: 30%;
+    text-decoration: underline;
+}
+
+label.red {
+    color: red;
+}
+
+label.green {
+    color: green;
+}
+
+label.blue {
+    color: blue
 }
 
 button {
     color: white;
     padding: 5px;
     font-size: 1em;
+    border-radius: 5px;
 }
 
-.red {
+button.red {
     background-color: red;
 }
 
-.green {
+button.green {
     background-color: green;
 }
 
-.blue {
+button.blue {
     background-color: blue;
 }
 
-.red,
-.green,
-.blue {
+button.red,
+button.green,
+button.blue {
     display: none;
 }
 
-#show-red:checked~.red,
-#show-green:checked~.green,
-#show-blue:checked~.blue {
+#show-red:checked~button.red,
+#show-green:checked~button.green,
+#show-blue:checked~button.blue {
     display: inline;
+}
+
+#show-red:checked~label.red,
+#show-green:checked~label.green,
+#show-blue:checked~label.blue {
+    opacity: 100%;
 }
