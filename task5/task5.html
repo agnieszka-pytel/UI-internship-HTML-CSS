@@ -11,17 +11,17 @@
 <body>
     <div class="wrapper">
         <span class="settings">Font type:</span>
-        <input type="radio" id="serif" name="font" checked><label id="serif-label" class="serif" for="serif">serif</label>
-        <input type="radio" id="sans-serif" name="font"><label id="sans-serif-label" class="sans-serif" for="sans-serif">sans-serif</label>
+        <input type="radio" class="radio" id="serif" name="font" checked><label id="serif-label" class="serif half-visible radio-label" for="serif">serif</label>
+        <input type="radio" class="radio" id="sans-serif" name="font"><label id="sans-serif-label" class="sans-serif half-visible radio-label" for="sans-serif">sans-serif</label>
 
         <span class="settings">Font size:</span>
-        <input type="radio" id="large-font" name="font-size"><label class="large-font" for="large-font">large</label>
-        <input type="radio" id="normal-font" name="font-size" checked><label class="normal-font" for="normal-font">normal</label>
-        <input type="radio" id="small-font" name="font-size"><label class="small-font" for="small-font">small</label>
+        <input type="radio" class="radio" id="large-font" name="font-size"><label class="large-font half-visible radio-label" for="large-font">large</label>
+        <input type="radio" class="radio" id="normal-font" name="font-size" checked><label class="normal-font half-visible radio-label" for="normal-font">normal</label>
+        <input type="radio" class="radio" id="small-font" name="font-size"><label class="small-font half-visible radio-label" for="small-font">small</label>
 
         <span class="settings">Color scheme:</span>
-        <input type="radio" id="day-scheme" name="scheme" checked><label class="day-scheme" for="day-scheme">day</label>
-        <input type="radio" id="night-scheme" name="scheme"><label class="night-scheme" for="night-scheme">night</label>
+        <input type="radio" class="radio" id="day-scheme" name="scheme" checked><label class="day-scheme half-visible radio-label" for="day-scheme">day</label>
+        <input type="radio" class="radio" id="night-scheme" name="scheme"><label class="night-scheme half-visible radio-label" for="night-scheme">night</label>
 
         <div class="content-wrapper">
             <h1 class="main-header">The Times</h1>
@@ -38,10 +38,12 @@
                 </p>
                 <p>
                     Mauris ut eros nulla. Nunc at dapibus erat, id cursus risus. Sed rutrum, lectus tempor scelerisque ultrices, eros dui tincidunt arcu, ut egestas metus justo non neque. Quisque euismod sagittis dictum. Fusce varius, elit in rhoncus venenatis, ligula lorem
-                    vehicula odio, id pharetra est ligula eu sapien. Nunc mollis dolor suscipit ligula sagittis interdum.
-                    <blockquote class="quote">Donec consectetur risus sed mauris sagittis, id bibendum est bibendum.</blockquote>
-                    Ut vitae pretium sapien, nec ultricies nunc. Aliquam erat volutpat. Cras et imperdiet risus, at dapibus tellus. Phasellus augue nisi, tincidunt non mi et, sodales hendrerit orci. Nam suscipit placerat diam in sodales. Suspendisse ut tristique mauris.
-                    Phasellus porta augue elit, porttitor gravida ligula faucibus a. Pellentesque facilisis, nisi id ullamcorper posuere, tellus dui pellentesque tortor, sed consectetur urna orci sit amet lectus. Nulla laoreet nec eros in dictum.
+                    vehicula odio, id pharetra est ligula eu sapien. Nunc mollis dolor suscipit ligula sagittis interdum.</p>
+                <blockquote class="quote">
+                    <p>Donec consectetur risus sed mauris sagittis, id bibendum est bibendum.</p>
+                </blockquote>
+                <p>Ut vitae pretium sapien, nec ultricies nunc. Aliquam erat volutpat. Cras et imperdiet risus, at dapibus tellus. Phasellus augue nisi, tincidunt non mi et, sodales hendrerit orci. Nam suscipit placerat diam in sodales. Suspendisse ut tristique
+                    mauris. Phasellus porta augue elit, porttitor gravida ligula faucibus a. Pellentesque facilisis, nisi id ullamcorper posuere, tellus dui pellentesque tortor, sed consectetur urna orci sit amet lectus. Nulla laoreet nec eros in dictum.
                 </p>
                 <h2>Article 2</h2>
                 <figure class="figure">
@@ -54,10 +56,15 @@
                 <p>
                     Nunc sodales lectus eu varius semper. Nunc et tortor sodales, hendrerit urna at, consectetur est. Donec pharetra sit amet ipsum suscipit posuere. Sed nec ipsum viverra, dictum ante id, mattis risus. In velit massa, consequat eget mauris at, accumsan sodales
                     eros.
-                    <blockquote class="quote">Morbi vestibulum rhoncus nisl eget finibus.</blockquote>
-                    Cras faucibus, enim in sollicitudin commodo, purus justo vestibulum lacus, vitae laoreet augue mi quis quam. Praesent tincidunt neque sed blandit rhoncus. Ut hendrerit quis libero quis mollis. Aliquam erat volutpat. Aenean mattis lectus non dictum hendrerit.
-                    Nulla tincidunt iaculis ligula.
-                    <blockquote class="quote">Mauris feugiat vitae magna sed ultrices.</blockquote>
+                </p>
+                <blockquote class="quote">
+                    <p>Morbi vestibulum rhoncus nisl eget finibus.</p>
+                </blockquote>
+                <p>Cras faucibus, enim in sollicitudin commodo, purus justo vestibulum lacus, vitae laoreet augue mi quis quam. Praesent tincidunt neque sed blandit rhoncus. Ut hendrerit quis libero quis mollis. Aliquam erat volutpat. Aenean mattis lectus
+                    non dictum hendrerit. Nulla tincidunt iaculis ligula.</p>
+                <blockquote class="quote">
+                    <p>Mauris feugiat vitae magna sed ultrices.</p>
+                </blockquote>
                 </p>
                 <figure class="figure">
                     <img class="in-text" src="george-washington-bridge.jpg" alt="Washington Bridge" align=right>
