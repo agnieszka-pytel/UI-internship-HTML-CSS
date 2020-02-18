@@ -1,3 +1,7 @@
+body {
+    font-size: 100%;
+}
+
 .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -47,17 +51,17 @@ input[type=radio] {
 
 .small-font,
 #small-font:checked~.content-wrapper {
-    font-size: smaller;
+    font-size: 0.85rem;
 }
 
 .normal-font,
 #normal-font:checked~.content-wrapper {
-    font-size: medium;
+    font-size: 1rem;
 }
 
 .large-font,
 #large-font:checked~.content-wrapper {
-    font-size: larger;
+    font-size: 1.15rem;
 }
 
 .day-scheme,
@@ -107,5 +111,5 @@ img.full-width {
 
 .desc {
     font-style: italic;
-    font-size: small;
+    font-size: 0.85em;
 }
