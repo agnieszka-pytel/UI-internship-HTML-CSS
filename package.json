@@ -1,0 +1,25 @@
+{
+    "name": "ui-internship-html-css",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "node-sass": "^4.13.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch:sass": "node-sass --watch mockups/*/scss -o mockups/*/css",
+        "compile:sass": "node-sass mockups/*/scss -o mockups/*/css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/agnieszka-pytel/UI-internship-HTML-CSS.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/agnieszka-pytel/UI-internship-HTML-CSS/issues"
+    },
+    "homepage": "https://github.com/agnieszka-pytel/UI-internship-HTML-CSS#readme"
+}
