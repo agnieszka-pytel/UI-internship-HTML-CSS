@@ -1,0 +1,93 @@
+html {
+  font-family: "Lato"; }
+
+.header {
+  background-image: url("../img/background-1.png");
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    .header {
+      background-image: url("../img/background-1@2x.png"); } }
+  @media (-webkit-min-device-pixel-ratio: 3), (-moz-min-device-pixel-ratio: 3) {
+    .header {
+      background-image: url("../img/background-1@3x.png"); } }
+
+.nav__list .main__section-background-2 {
+  background-image: url("../img/background-2.png");
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    .nav__list .main__section-background-2 {
+      background-image: url("../img/background-2@2x.png"); } }
+  @media (-webkit-min-device-pixel-ratio: 3), (-moz-min-device-pixel-ratio: 3) {
+    .nav__list .main__section-background-2 {
+      background-image: url("../img/background-2@3x.png"); } }
+
+.menu__item__1 {
+  background-image: url("../img/menu-1.png");
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    .menu__item__1 {
+      background-image: url("../img/menu-1@2x.png"); } }
+  @media (-webkit-min-device-pixel-ratio: 3), (-moz-min-device-pixel-ratio: 3) {
+    .menu__item__1 {
+      background-image: url("../img/menu-1@3x.png"); } }
+
+.menu__item__2 {
+  background-image: url("../img/menu-2.png");
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    .menu__item__2 {
+      background-image: url("../img/menu-2@2x.png"); } }
+  @media (-webkit-min-device-pixel-ratio: 3), (-moz-min-device-pixel-ratio: 3) {
+    .menu__item__2 {
+      background-image: url("../img/menu-2@3x.png"); } }
+
+.menu__item__3 {
+  background-image: url("../img/menu-3.png");
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    .menu__item__3 {
+      background-image: url("../img/menu-3@2x.png"); } }
+  @media (-webkit-min-device-pixel-ratio: 3), (-moz-min-device-pixel-ratio: 3) {
+    .menu__item__3 {
+      background-image: url("../img/menu-3@3x.png"); } }
+
+.menu__item__4 {
+  background-image: url("../img/menu-4.png");
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    .menu__item__4 {
+      background-image: url("../img/menu-4@2x.png"); } }
+  @media (-webkit-min-device-pixel-ratio: 3), (-moz-min-device-pixel-ratio: 3) {
+    .menu__item__4 {
+      background-image: url("../img/menu-4@3x.png"); } }
+
+.menu__item__5 {
+  background-image: url("../img/menu-5.png");
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    .menu__item__5 {
+      background-image: url("../img/menu-5@2x.png"); } }
+  @media (-webkit-min-device-pixel-ratio: 3), (-moz-min-device-pixel-ratio: 3) {
+    .menu__item__5 {
+      background-image: url("../img/menu-5@3x.png"); } }
+
+.menu__item__6 {
+  background-image: url("../img/menu-6.png");
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    .menu__item__6 {
+      background-image: url("../img/menu-6@2x.png"); } }
+  @media (-webkit-min-device-pixel-ratio: 3), (-moz-min-device-pixel-ratio: 3) {
+    .menu__item__6 {
+      background-image: url("../img/menu-6@3x.png"); } }
+
+.list {
+  list-style-type: none; }
