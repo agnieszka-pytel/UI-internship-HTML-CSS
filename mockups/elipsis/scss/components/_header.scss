@@ -1,0 +1,36 @@
+.c-header {
+    height: 100vh;
+    text-align: center;
+}
+
+.c-header--background1 {
+    @include background-image-resolution('background-1', 100%, auto);
+    background-size: cover;
+}
+
+.c-header--white {
+    color: $lightColor;
+}
+
+.c-header__content {
+    padding: 10%;
+}
+
+.c-header__logo {
+    margin: 2em;
+    width: 3em;
+}
+
+.c-header__title {
+    margin: 3% 0;
+}
+
+.c-header__switch {
+    display: inline-block;
+    width: 1rem;
+    height: 2rem;
+    margin-top: 10%;
+    border: 1px solid $lightColor;
+    border-radius: 0.5rem;
+    color: inherit;
+}
