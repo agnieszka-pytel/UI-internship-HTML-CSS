@@ -1,0 +1,43 @@
+html {
+    font-family: $regularFont, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+}
+
+.c-header__title,
+.c-article__title,
+.c-list__ititle {
+    font-weight: bold;
+}
+
+.c-header__title {
+    font-size: 3em;
+}
+
+.c-header__title,
+.c-header__description,
+.c-article__content,
+.c-list__icontent {
+    line-height: 150%;
+}
+
+.c-header__content {
+    text-transform: uppercase;
+}
+
+.c-article__title {
+    font-size: 2em;
+}
+
+.c-article__content,
+.c-list__icontent {
+    letter-spacing: 0em;
+}
+
+.c-article__content {
+    font-size: 0.9em;
+}
+
+.c-list__icontent {
+    font-size: 0.9em;
+}

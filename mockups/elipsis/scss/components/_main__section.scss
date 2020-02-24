@@ -1,0 +1,17 @@
+.c-main__section {
+    text-align: center;
+    padding: 10% 15%;
+}
+
+.c-main__section--white {
+    color: $lightColor;
+}
+
+.c-main__section--background2 {
+    @include background-image-resolution('background-2', 100%, auto);
+    background-size: cover;
+}
+
+.c-main__section--full {
+    padding: 0;
+}

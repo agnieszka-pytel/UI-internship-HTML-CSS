@@ -1,0 +1,16 @@
+@mixin background-image-resolution($file, $width, $height) {
+    background-image: url('../img/' + $file + '.png');
+    background-size: $width $height;
+    -webkit-background-size: $width $height;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        & {
+            background-image: url('../img/' + $file + '@2x.png');
+        }
+    }
+    @media (-webkit-min-device-pixel-ratio: 3),
+    (-moz-min-device-pixel-ratio: 3) {
+        & {
+            background-image: url('../img/' + $file + '@3x.png');
+        }
+    }
+}
