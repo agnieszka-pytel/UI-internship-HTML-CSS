@@ -1,12 +1,4 @@
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
-@import 'base/general';
-@import 'base/reset';
-@import 'base/typography';
-@import 'components/article';
-@import 'components/button';
-@import 'components/header';
-@import 'components/list';
-@import 'components/main__section';
-@import 'components/menu';
-@import 'layout/flex';
+@import 'abstracts/';
+@import 'base/';
+@import 'components/';
+@import 'layout/';

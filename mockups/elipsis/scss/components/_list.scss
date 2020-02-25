@@ -13,5 +13,10 @@
     }
     &__ititle {
         margin: 5% 0;
+        font-weight: bold;
+        letter-spacing: $bigger-letter-spacing;
+    }
+    &__icontent {
+        font-size: 0.9em;
     }
 }
