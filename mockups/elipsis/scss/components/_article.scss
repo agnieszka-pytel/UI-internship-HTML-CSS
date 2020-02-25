@@ -34,7 +34,7 @@
         left: 50%;
         transform: translate(-50%, 0);
     }
-    &___content {
+    &__content {
         display: inline-block;
         margin: 2% 15% 0 15%;
     }
@@ -43,5 +43,15 @@
     }
     &__content:last-of-type {
         margin-bottom: 5%;
+    }
+    &__copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+    &__logo {
+        width: 2.5em;
+        margin: 0 3%;
     }
 }

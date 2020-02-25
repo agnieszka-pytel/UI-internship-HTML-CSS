@@ -1,7 +1,7 @@
-@mixin background-image-resolution($file, $width, $height) {
+@mixin background-image-resolution($file) {
     background-image: url('../img/' + $file + '.png');
-    background-size: $width $height;
-    -webkit-background-size: $width $height;
+    background-size: cover;
+    -webkit-background-size: cover;
     @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
         & {
             background-image: url('../img/' + $file + '@2x.png');

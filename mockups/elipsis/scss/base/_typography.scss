@@ -4,6 +4,11 @@ html {
     letter-spacing: 0.1em;
 }
 
+html,
+.c-button {
+    letter-spacing: 0.1em;
+}
+
 .c-header__title,
 .c-article__title,
 .c-list__ititle {
@@ -30,14 +35,21 @@ html {
 }
 
 .c-article__content,
-.c-list__icontent {
+.c-list__icontent,
+.c-article__copyright {
     letter-spacing: 0em;
 }
 
-.c-article__content {
+.c-article__content,
+.c-list__icontent,
+.c-button {
     font-size: 0.9em;
 }
 
-.c-list__icontent {
-    font-size: 0.9em;
+.c-article__copyright {
+    font-size: 0.7em;
+}
+
+.c-menu__link {
+    font-size: 1.5em;
 }
