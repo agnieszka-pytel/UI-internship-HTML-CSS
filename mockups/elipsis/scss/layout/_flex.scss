@@ -1,16 +1,7 @@
 .l-flex {
     display: flex;
     flex-wrap: wrap;
-}
-
-.l-flex--space-between {
-    justify-content: space-between;
-}
-
-.l-flex--grow-1 {
-    flex-grow: 1;
-}
-
-.l-flex-grow-2 {
-    flex-grow: 2;
+    &--space-between {
+        justify-content: space-between;
+    }
 }
