@@ -1,6 +1,7 @@
 @mixin background-image-resolution($file) {
     background-image: url('../img/' + $file + '.png');
     background-size: cover;
+    background-position: right;
     -webkit-background-size: cover;
     @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
         & {
@@ -18,4 +19,16 @@
 @mixin flex-layout {
     display: flex;
     flex-wrap: wrap;
+}
+
+@mixin for-tablet {
+    @media screen and (max-width: $desktop-width) and (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin for-mobile {
+    @media screen and (max-width: $tablet-width - 1px) {
+        @content;
+    }
 }

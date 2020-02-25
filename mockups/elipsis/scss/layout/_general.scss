@@ -3,6 +3,11 @@ html {
     font-size: $base-font-size;
     scroll-behavior: smooth;
     color: $dark-color;
+    @include for-mobile {
+        font-size: $mobile-font-size;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
 }
 
 body {
@@ -12,4 +17,10 @@ body {
 a {
     text-decoration: none;
     color: $light-color;
+}
+
+header br {
+    @include for-mobile {
+        display: none;
+    }
 }

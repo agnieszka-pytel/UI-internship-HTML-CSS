@@ -3,6 +3,9 @@
     text-align: center;
     &--background1 {
         @include background-image-resolution('background-1');
+        @include for-mobile {
+            background-position: -55%;
+        }
     }
     &--white {
         color: $light-color;
@@ -11,10 +14,19 @@
         padding: 10%;
         text-transform: uppercase;
         letter-spacing: $bigger-letter-spacing;
+        @include for-tablet {
+            padding: 7.5%;
+        }
+        @include for-mobile {
+            padding: 7.5% 5%;
+        }
     }
     &__logo {
         margin: 2em;
         width: 3em;
+        @include for-mobile {
+            width: 5em;
+        }
     }
     &__title {
         margin: 3% 0;
@@ -22,6 +34,14 @@
         font-weight: bold;
         letter-spacing: $bigger-letter-spacing;
         line-height: $bigger-line-height;
+        @include for-mobile {
+            font-size: 2em;
+        }
+    }
+    &__description {
+        @include for-mobile {
+            line-height: 2em;
+        }
     }
     &__switch {
         display: inline-block;
@@ -31,5 +51,10 @@
         border: 1px solid $light-color;
         border-radius: 0.5rem;
         color: inherit;
+    }
+    &__break {
+        @include for-mobile {
+            display: inline;
+        }
     }
 }

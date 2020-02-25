@@ -2,6 +2,13 @@
     border: 2px solid;
     border-top: none;
     position: relative;
+    &:last-of-type {
+        .c-article__content {
+            @include for-mobile {
+                margin-bottom: 0;
+            }
+        }
+    }
     &--white {
         border-color: $light-color;
     }
@@ -11,6 +18,9 @@
     &__border-part {
         width: 20%;
         border: 1px solid;
+        @include for-mobile {
+            width: 5%;
+        }
     }
     &__border-part--black {
         div {
@@ -33,30 +43,45 @@
         top: -0.6em;
         left: 50%;
         transform: translate(-50%, 0);
+        width: fit-content;
         font-size: 2em;
         font-weight: bold;
         letter-spacing: $bigger-letter-spacing;
+        @include for-mobile {
+            top: -0.7em;
+            line-height: 150%;
+        }
+    }
+    &__title--broken {
+        @include for-mobile {
+            top: -1.5em;
+        }
     }
     &__content {
         display: inline-block;
         margin: 2% 15% 0 15%;
         font-size: 0.9em;
+        @include for-mobile {
+            margin: 10% 5% 0 5%;
+            font-size: 1em;
+        }
     }
     &__content:first-of-type {
         margin-top: 5%;
+        @include for-mobile {
+            margin-top: 20%;
+        }
     }
     &__content:last-of-type {
         margin-bottom: 5%;
+        @include for-mobile {
+            margin-bottom: 20%;
+        }
     }
-    &__copyright {
-        @include flex-layout;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%;
-        font-size: 0.7em;
-    }
-    &__logo {
-        width: 2.5em;
-        margin: 0 3%;
+    &__break {
+        display: none;
+        @include for-mobile {
+            display: inline;
+        }
     }
 }

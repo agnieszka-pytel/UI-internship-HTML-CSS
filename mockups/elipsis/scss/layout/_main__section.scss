@@ -1,7 +1,13 @@
 .c-main__section {
     text-align: center;
     padding: 10% 20%;
-    &--reduced-padding {
+    @include for-tablet {
+        padding: 15% 10%;
+    }
+    @include for-mobile {
+        padding: 25% 5%;
+    }
+    &:last-of-type {
         padding-bottom: 5%;
     }
     &--white {
@@ -12,5 +18,11 @@
     }
     &--full {
         padding: 0;
+        @include for-tablet {
+            padding: 0 10%;
+        }
+        @include for-mobile {
+            padding: 0 5%;
+        }
     }
 }
