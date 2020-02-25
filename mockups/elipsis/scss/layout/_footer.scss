@@ -1,0 +1,24 @@
+.c-footer {
+    margin-bottom: 5%;
+    @include for-mobile {
+        margin: 10% 5% 15% 5%;
+    }
+    &__copyright {
+        @include flex-layout;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7em;
+        @include for-mobile {
+            flex-direction: column;
+            font-size: 0.9em;
+        }
+    }
+    &__logo {
+        width: 2.5em;
+        margin: 0 3%;
+        @include for-mobile {
+            width: 3em;
+            margin: 3% 0;
+        }
+    }
+}

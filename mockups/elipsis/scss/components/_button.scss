@@ -3,6 +3,10 @@
     margin-bottom: 5%;
     font-size: 0.9em;
     letter-spacing: $bigger-letter-spacing;
+    @include for-mobile {
+        width: 90%;
+        margin: 10% 0;
+    }
     &--black {
         background-color: $dark-color;
         color: $light-color;
