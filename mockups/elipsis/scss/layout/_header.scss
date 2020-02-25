@@ -5,10 +5,12 @@
         @include background-image-resolution('background-1');
     }
     &--white {
-        color: $lightColor;
+        color: $light-color;
     }
     &__content {
         padding: 10%;
+        text-transform: uppercase;
+        letter-spacing: $bigger-letter-spacing;
     }
     &__logo {
         margin: 2em;
@@ -16,13 +18,17 @@
     }
     &__title {
         margin: 3% 0;
+        font-size: 3em;
+        font-weight: bold;
+        letter-spacing: $bigger-letter-spacing;
+        line-height: $bigger-line-height;
     }
     &__switch {
         display: inline-block;
         width: 1rem;
         height: 2rem;
         margin-top: 10%;
-        border: 1px solid $lightColor;
+        border: 1px solid $light-color;
         border-radius: 0.5rem;
         color: inherit;
     }

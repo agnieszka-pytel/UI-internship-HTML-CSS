@@ -1,8 +1,10 @@
 .c-button {
     padding: 1em 15%;
     margin-bottom: 5%;
+    font-size: 0.9em;
+    letter-spacing: $bigger-letter-spacing;
     &--black {
-        background-color: $darkColor;
-        color: $lightColor;
+        background-color: $dark-color;
+        color: $light-color;
     }
 }

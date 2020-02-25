@@ -5,7 +5,7 @@
         padding-bottom: 5%;
     }
     &--white {
-        color: $lightColor;
+        color: $light-color;
     }
     &--background2 {
         @include background-image-resolution('background-2');
