@@ -3,26 +3,40 @@
         padding: 0;
     }
     &__item {
-        display: inline-block;
-        width: 25%;
-        height: 5em;
+        margin-bottom: 1%;
+        width: 29%;
+        height: 10em;
+    }
+    &__item--wide {
+        width: 40%;
     }
     &__item-1 {
-        @include background-image-resolution('menu-1', 100%, auto);
+        @include background-image-resolution('menu-1');
     }
     &__item-2 {
-        @include background-image-resolution('menu-2', 100%, auto);
+        @include background-image-resolution('menu-2');
     }
     &__item-3 {
-        @include background-image-resolution('menu-3', 100%, auto);
+        @include background-image-resolution('menu-3');
     }
     &__item-4 {
-        @include background-image-resolution('menu-4', 100%, auto);
+        @include background-image-resolution('menu-4');
     }
     &__item-5 {
-        @include background-image-resolution('menu-5', 100%, auto);
+        @include background-image-resolution('menu-5');
     }
     &__item-6 {
-        @include background-image-resolution('menu-6', 100%, auto);
+        @include background-image-resolution('menu-6');
+    }
+    &__link {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 5%;
+    }
+    &__link:hover {
+        color: $darkColor;
+        background-color: $lightColor;
+        opacity: 0.5;
     }
 }

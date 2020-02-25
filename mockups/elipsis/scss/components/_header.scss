@@ -2,8 +2,7 @@
     height: 100vh;
     text-align: center;
     &--background1 {
-        @include background-image-resolution('background-1', 100%, auto);
-        background-size: cover;
+        @include background-image-resolution('background-1');
     }
     &--white {
         color: $lightColor;

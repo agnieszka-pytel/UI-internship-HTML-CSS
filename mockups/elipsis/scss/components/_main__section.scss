@@ -1,12 +1,14 @@
 .c-main__section {
     text-align: center;
-    padding: 10% 15%;
+    padding: 10% 20%;
+    &--reduced-padding {
+        padding-bottom: 5%;
+    }
     &--white {
         color: $lightColor;
     }
     &--background2 {
-        @include background-image-resolution('background-2', 100%, auto);
-        background-size: cover;
+        @include background-image-resolution('background-2');
     }
     &--full {
         padding: 0;
