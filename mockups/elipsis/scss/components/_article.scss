@@ -2,41 +2,21 @@
     border: 2px solid;
     border-top: none;
     position: relative;
-    &:last-of-type {
-        .c-article__content {
-            @include for-mobile {
-                margin-bottom: 0;
-            }
-        }
+    &::before {
+        @include partial-border;
+        float: left;
+    }
+    &::after {
+        @include partial-border;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     &--white {
         border-color: $light-color;
     }
     &--black {
         border-color: $dark-color;
-    }
-    &__border-part {
-        width: 20%;
-        border: 1px solid;
-        @include for-mobile {
-            width: 5%;
-        }
-    }
-    &__border-part--black {
-        div {
-            border-color: $dark-color;
-        }
-    }
-    &__border-part--white {
-        div {
-            border-color: $light-color;
-        }
-    }
-    &__border-part:first-of-type {
-        float: left;
-    }
-    &__border-part:last-of-type {
-        float: right;
     }
     &__title {
         position: absolute;
@@ -60,14 +40,14 @@
     &__content {
         display: inline-block;
         margin: 2% 15% 0 15%;
-        font-size: 0.9em;
+        font-size: 1em;
         @include for-mobile {
             margin: 10% 5% 0 5%;
             font-size: 1em;
         }
     }
     &__content:first-of-type {
-        margin-top: 5%;
+        margin-top: 7%;
         @include for-mobile {
             margin-top: 20%;
         }
@@ -76,6 +56,11 @@
         margin-bottom: 5%;
         @include for-mobile {
             margin-bottom: 20%;
+        }
+    }
+    &__content--reduced-margin {
+        @include for-mobile {
+            margin-bottom: 0 !important;
         }
     }
     &__break {
