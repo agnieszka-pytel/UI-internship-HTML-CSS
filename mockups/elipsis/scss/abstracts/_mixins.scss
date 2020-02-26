@@ -21,6 +21,15 @@
     flex-wrap: wrap;
 }
 
+@mixin partial-border {
+    content: '';
+    width: 20%;
+    border: 1px solid;
+    @include for-mobile {
+        width: 5%;
+    }
+}
+
 @mixin for-tablet {
     @media screen and (max-width: $desktop-width) and (min-width: $tablet-width) {
         @content;

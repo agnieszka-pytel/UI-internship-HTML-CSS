@@ -131,27 +131,28 @@ table {
   border: 2px solid;
   border-top: none;
   position: relative; }
-  @media screen and (max-width: 677px) {
-    .c-article:last-of-type .c-article__content {
-      margin-bottom: 0; } }
+  .c-article::before {
+    content: '';
+    width: 20%;
+    border: 1px solid;
+    float: left; }
+    @media screen and (max-width: 677px) {
+      .c-article::before {
+        width: 5%; } }
+  .c-article::after {
+    content: '';
+    width: 20%;
+    border: 1px solid;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    @media screen and (max-width: 677px) {
+      .c-article::after {
+        width: 5%; } }
   .c-article--white {
     border-color: white; }
   .c-article--black {
     border-color: #3c3c3c; }
-  .c-article__border-part {
-    width: 20%;
-    border: 1px solid; }
-    @media screen and (max-width: 677px) {
-      .c-article__border-part {
-        width: 5%; } }
-  .c-article__border-part--black div {
-    border-color: #3c3c3c; }
-  .c-article__border-part--white div {
-    border-color: white; }
-  .c-article__border-part:first-of-type {
-    float: left; }
-  .c-article__border-part:last-of-type {
-    float: right; }
   .c-article__title {
     position: absolute;
     top: -0.6em;
@@ -171,13 +172,13 @@ table {
   .c-article__content {
     display: inline-block;
     margin: 2% 15% 0 15%;
-    font-size: 0.9em; }
+    font-size: 1em; }
     @media screen and (max-width: 677px) {
       .c-article__content {
         margin: 10% 5% 0 5%;
         font-size: 1em; } }
   .c-article__content:first-of-type {
-    margin-top: 5%; }
+    margin-top: 7%; }
     @media screen and (max-width: 677px) {
       .c-article__content:first-of-type {
         margin-top: 20%; } }
@@ -186,6 +187,9 @@ table {
     @media screen and (max-width: 677px) {
       .c-article__content:last-of-type {
         margin-bottom: 20%; } }
+  @media screen and (max-width: 677px) {
+    .c-article__content--reduced-margin {
+      margin-bottom: 0 !important; } }
   .c-article__break {
     display: none; }
     @media screen and (max-width: 677px) {
@@ -430,7 +434,7 @@ a {
         padding: 7.5% 5%; } }
   .c-header__logo {
     margin: 2em;
-    width: 3em; }
+    width: 4em; }
     @media screen and (max-width: 677px) {
       .c-header__logo {
         width: 5em; } }
