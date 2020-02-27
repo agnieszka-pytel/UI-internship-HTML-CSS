@@ -4,9 +4,6 @@
         margin: 10% 5% 15% 5%;
     }
     &__copyright {
-        @include flex-layout;
-        justify-content: center;
-        align-items: center;
         font-size: 0.7em;
         @include for-mobile {
             flex-direction: column;

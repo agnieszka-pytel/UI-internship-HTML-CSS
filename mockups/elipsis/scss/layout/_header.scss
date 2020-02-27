@@ -1,6 +1,5 @@
 .c-header {
     height: 100vh;
-    text-align: center;
     &--background1 {
         @include background-image-resolution('background-1');
         @include for-mobile {
@@ -12,7 +11,6 @@
     }
     &__content {
         padding: 10%;
-        text-transform: uppercase;
         letter-spacing: $bigger-letter-spacing;
         @include for-tablet {
             padding: 7.5%;
@@ -47,7 +45,7 @@
         display: inline-block;
         width: 1rem;
         height: 2rem;
-        margin-top: 10%;
+        margin-top: 7%;
         border: 1px solid $light-color;
         border-radius: 0.5rem;
         color: inherit;

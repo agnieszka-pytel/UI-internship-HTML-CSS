@@ -16,11 +16,6 @@
     }
 }
 
-@mixin flex-layout {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 @mixin partial-border {
     content: '';
     width: 20%;

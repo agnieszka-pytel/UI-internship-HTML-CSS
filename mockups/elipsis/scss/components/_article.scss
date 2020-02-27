@@ -43,7 +43,6 @@
         font-size: 1em;
         @include for-mobile {
             margin: 10% 5% 0 5%;
-            font-size: 1em;
         }
     }
     &__content:first-of-type {
