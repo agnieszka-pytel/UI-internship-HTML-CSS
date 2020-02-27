@@ -1,0 +1,21 @@
+.c-form {
+    position: relative;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5em;
+    margin-top: 5rem;
+    &__title {
+        font-size: 1.8em;
+        color: black;
+    }
+    &__input {
+        @extend %reset-inputs-buttons;
+        font-family: $main-font;
+        font-size: 1em;
+        flex-grow: 8;
+    }
+    &__submit {
+        padding: 0;
+        color: $light-gray;
+        flex-grow: 2;
+    }
+}

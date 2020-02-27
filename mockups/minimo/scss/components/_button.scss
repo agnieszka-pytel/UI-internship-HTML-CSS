@@ -1,0 +1,9 @@
+.c-button {
+    @extend %reset-inputs-buttons;
+    font-family: $main-font;
+    font-size: 1.5em;
+    border: 1px solid $dark-gray;
+    color: $dark-gray;
+    padding: 5%;
+    margin-bottom: 30%;
+}

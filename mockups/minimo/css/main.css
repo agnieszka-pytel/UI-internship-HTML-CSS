@@ -1,2 +1,296 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Ubuntu:300|Playfair+Display&display=swap");
+.c-article__category, .c-article__comment {
+  font-size: 1em;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  color: #b4ad9e;
+  margin-top: 2em; }
+
+.c-image, .c-image--main {
+  width: 100%; }
+
+.link--menu, .c-menu__link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit; }
+
+.c-button, .c-form__input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.c-article__content, .c-article__content--main {
+  overflow: hidden;
+  margin-bottom: 1em;
+  line-height: 1.5em; }
+
+.c-article__title, .c-article__title--main {
+  font-size: 2rem;
+  margin: 1em 0;
+  line-height: 1.2em; }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.inline-flex {
+  display: inline-flex; }
+
+.flex-row {
+  flex-direction: row; }
+
+.flex-column {
+  flex-direction: column; }
+
+.flex-space-between {
+  justify-content: space-between; }
+
+.flex-center-items {
+  align-items: center; }
+
+.flex-center-content {
+  justify-content: center; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.background-gray {
+  background-color: #f0f0f0; }
+
+.right {
+  float: right; }
+
+.center {
+  margin: 0 auto; }
+
+.full-fixed {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box; }
+
+.side-padding {
+  padding: 0 7.5%; }
+
+.tb-margin {
+  margin: 20% 0; }
+
+.tb-margin-small {
+  margin: 10% 0; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.c-article__comment::placeholder {
+  color: #b4ad9e; }
+
+.c-article__title--main {
+  margin-bottom: 1.5em; }
+
+.c-article__content {
+  max-height: 4.5em; }
+  .c-article__content--main {
+    max-height: 6em; }
+
+.c-button {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  border: 1px solid #626262;
+  color: #626262;
+  padding: 5%;
+  margin-bottom: 30%; }
+
+.c-form {
+  position: relative;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5em;
+  margin-top: 5rem; }
+  .c-form__title {
+    font-size: 1.8em;
+    color: black; }
+  .c-form__input {
+    font-family: "Playfair Display", serif;
+    font-size: 1em;
+    flex-grow: 8; }
+  .c-form__submit {
+    padding: 0;
+    color: #b4ad9e;
+    flex-grow: 2; }
+
+.c-image--main {
+  margin-top: 20%; }
+
+.c-menu-icon {
+  width: 2.5rem;
+  height: 2rem; }
+  .c-menu-icon__bar {
+    border: 1px solid black; }
+
+.c-menu {
+  display: none;
+  position: absolute;
+  top: 105%;
+  right: 0;
+  width: 100%; }
+  .c-menu__item {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.5%;
+    background-color: #f0f0f0;
+    opacity: 0.9; }
+  .c-menu__link {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 1em 0;
+    opacity: 1; }
+
+#menu:checked ~ .c-menu {
+  display: block; }
+
+html {
+  scroll-behavior: smooth;
+  color: #626262;
+  font-size: 14px;
+  font-family: "Playfair Display", serif; }
+
+.c-header {
+  padding: 5%;
+  padding-left: 7.5%; }
+  .c-header__title {
+    font-family: "Inconsolata", serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.7rem;
+    color: black; }
+  .c-header__checkbox {
+    display: none; }
+
+.c-section:first-child {
+  padding-top: 20%; }

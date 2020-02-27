@@ -1,0 +1,26 @@
+.c-article {
+    &__category {
+        @extend %side-text;
+    }
+    &__comment {
+        @extend %side-text;
+        &::placeholder {
+            color: $light-gray;
+        }
+    }
+    &__title {
+        @extend %title;
+        &--main {
+            @extend %title;
+            margin-bottom: 1.5em;
+        }
+    }
+    &__content {
+        @extend %paragraph;
+        max-height: 4.5em;
+        &--main {
+            @extend %paragraph;
+            max-height: 6em;
+        }
+    }
+}

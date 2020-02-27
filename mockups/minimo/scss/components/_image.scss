@@ -1,0 +1,7 @@
+.c-image {
+    @extend %image;
+    &--main {
+        @extend %image;
+        margin-top: 20%;
+    }
+}

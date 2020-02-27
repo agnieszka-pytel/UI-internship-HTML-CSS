@@ -4,115 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be8589535f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Minimo</title>
 </head>
 
 <body>
-    <header>
-        <a>
-            <h1 class="">minimø</h1>
+    <header class="c-header uppercase background-gray flex flex-row flex-space-between flex-center-items full-fixed">
+        <a class="c-header__link">
+            <h1 class="c-header__title">minimø</h1>
         </a>
-        <span></span>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Lifestyle</a>
-                    <a href="#">Photodiary</a>
-                    <a href="#">Music</a>
-                    <a href="#">Travel</a>
-                </li>
+        <input class="c-header__checkbox" type="checkbox" name="menu" id="menu">
+        <label for="menu" class="c-menu-icon inline-flex flex-column flex-space-between right">
+            <span class="c-menu-icon__bar"></span>
+            <span class="c-menu-icon__bar"></span>
+            <span class="c-menu-icon__bar"></span>
+        </label>
+        <nav class="c-menu">
+            <ul class="c-menu__list flex flex-column flex-center-items">
+                <li class="c-menu__item"><a class="c-menu__link" href="#">Lifestyle</a></li>
+                <li class="c-menu__item"><a class="c-menu__link" href="#">Photodiary</a></li>
+                <li class="c-menu__item"><a class="c-menu__link" href="#">Music</a></li>
+                <li class="c-menu__item"><a class="c-menu__link" href="#">Travel</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <img src="img/image.png" srcset="img/image@2x.png 2x, img/image@3x.png 3x">
+        <section class="c-section">
+            <img src="img/main-image.png" srcset="img/main-image@2x.png 2x, img/main-image@3x.png 3x" class="c-image--main">
         </section>
-        <section>
-            <article>
-                <span>photodiary</span>
-                <h2>The perfect weekend getaway</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        <section class="c-section">
+            <article class="c-article side-padding tb-margin">
+                <span class="c-article__category">photodiary</span>
+                <h2 class="c-article__title--main">The perfect weekend getaway</h2>
+                <p class="c-article__content--main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
                     omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
                     sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
                     modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                <span>Leave a comment</span>
+                <input type="text" class="c-article__comment" placeholder="Leave a comment...">
             </article>
-        </section>
-        <section>
-            <article>
-                <img src="" alt="" srcset="">
-                <span>Lifestyle</span>
-                <h2>More than just a music festival</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
-                    omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-            </article>
-            <article>
-                <img src="" alt="" srcset="">
-                <span>Lifestyle</span>
-                <h2>Life tastes better with coffee</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            <article class="c-article side-padding tb-margin">
+                <img src="img/image-1.png" srcset="img/image-1@2x.png 2x, img/image-1@3x.png 3x" class="c-image">
+                <span class="c-article__category">Lifestyle</span>
+                <h2 class="c-article__title">More than just a music festival</h2>
+                <p class="c-article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
                     omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
                     sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
                     modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             </article>
-            <article>
-                <img src="" alt="" srcset="">
-                <span>photodiary</span>
-                <h2>American dream</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            <article class="c-article side-padding tb-margin">
+                <img src="img/image-2.png" srcset="img/image-2@2x.png 2x, img/image-2@3x.png 3x" class="c-image">
+                <span class="c-article__category">Lifestyle</span>
+                <h2 class="c-article__title">Life tastes better with coffee</h2>
+                <p class="c-article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
                     omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
                     sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
                     modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             </article>
-            <article>
-                <img src="" alt="" srcset="">
-                <span>photodiary</span>
-                <h2>A day exploring the Alps</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            <article class="c-article side-padding tb-margin">
+                <img src="img/image-3.png" srcset="img/image-3@2x.png 2x, img/image-3@3x.png 3x" class="c-image">
+                <span class="c-article__category">photodiary</span>
+                <h2 class="c-article__title">American dream</h2>
+                <p class="c-article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                    omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </article>
+            <article class="c-article side-padding tb-margin">
+                <img src="img/image-4.png" srcset="img/image-4@2x.png 2x, img/image-4@3x.png 3x" class="c-image">
+                <span class="c-article__category">photodiary</span>
+                <h2 class="c-article__title">A day exploring the Alps</h2>
+                <p class="c-article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
                     omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
                     sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
                     modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             </article>
         </section>
-        <section>
-            <h3>Sign up for our newsletter!</h3>
-            <form action="" method="post">
-                <label for=""></label>
-                <input type="email" name="" id="">
-            </form>
+        <section class="c-section background-gray flex flex-column flex-center-items">
+            <article class="side-padding tb-margin-small">
+                <h3 class="c-form__title">Sign up for our newsletter!</h3>
+                <form class="c-form flex flex-row flex-space-between" action=" " method="post ">
+                    <input class="c-form__input" type="email " name="email" id="email" placeholder="Enter a valid email address">
+                    <button class="c-form__submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </article>
         </section>
-        <section>
-            <article>
-                <img src="" alt="" srcset="">
-                <span>lifestyle</span>
-                <h2>Top 10 song for running</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        <section class="c-section">
+            <article class="c-article side-padding tb-margin">
+                <img src="img/image-5.png" srcset="img/image-5@2x.png 2x, img/image-5@3x.png 3x" class="c-image">
+                <span class="c-article__category">lifestyle</span>
+                <h2 class="c-article__title">Top 10 song for running</h2>
+                <p class="c-article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
                     omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
                     sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
                     modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             </article>
-            <article>
-                <img src="" alt="" srcset="">
-                <span>photodiary</span>
-                <h2>Cold winter days</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            <article class="c-article side-padding tb-margin">
+                <img src="img/image-6.png" srcset="img/image-6@2x.png 2x, img/image-6@3x.png 3x" class="c-image">
+                <span class="c-article__category">photodiary</span>
+                <h2 class="c-article__title">Cold winter days</h2>
+                <p class="c-article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
                     omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
                     sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
                     modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <div class="flex flex-center-content">
+                    <button class="c-button tb-margin-small">Load more</button>
+                </div>
             </article>
-            <button>Load more</button>
         </section>
     </main>
     <footer></footer>
