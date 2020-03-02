@@ -13,6 +13,11 @@
 
 .flex-column {
     flex-direction: column;
+    &-mb {
+        @include for-tablet {
+            flex-direction: initial;
+        }
+    }
 }
 
 .flex-space-between {
@@ -31,8 +36,15 @@
     text-transform: uppercase;
 }
 
-.background-gray {
+.background-gray,
+.background-gray-mb {
     background-color: $background-light-gray;
+}
+
+.background-gray-mb {
+    @include for-tablet {
+        background-color: transparent;
+    }
 }
 
 .right {
@@ -51,10 +63,16 @@
 
 .side-padding {
     padding: 0 7.5%;
+    @include for-tablet {
+        padding: 0 5%;
+    }
 }
 
 .tb-margin {
-    margin: 20% 0;
+    margin: 15% 0;
+    @include for-tablet {
+        margin: 7.5% 0;
+    }
 }
 
 .tb-margin-small {

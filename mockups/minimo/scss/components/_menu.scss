@@ -10,6 +10,10 @@
         margin-bottom: 0.5%;
         background-color: $background-light-gray;
         opacity: 0.9;
+        @include for-tablet {
+            width: auto;
+            background-color: unset;
+        }
     }
     &__link {
         @extend %link;
@@ -17,6 +21,12 @@
         font-size: 1.2em;
         padding: 1em 0;
         opacity: 1;
+    }
+    @include for-tablet {
+        display: block;
+        position: initial;
+        width: unset;
+        flex-grow: 1;
     }
 }
 

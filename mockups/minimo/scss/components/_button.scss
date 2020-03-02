@@ -6,4 +6,7 @@
     color: $dark-gray;
     padding: 5%;
     margin-bottom: 30%;
+    @include for-tablet {
+        padding: 2.5% 5%;
+    }
 }

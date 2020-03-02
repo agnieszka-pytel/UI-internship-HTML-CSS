@@ -45,6 +45,9 @@
 
 .flex-column {
   flex-direction: column; }
+  @media screen and (min-width: 678px) {
+    .flex-column-mb {
+      flex-direction: initial; } }
 
 .flex-space-between {
   justify-content: space-between; }
@@ -58,8 +61,13 @@
 .uppercase {
   text-transform: uppercase; }
 
-.background-gray {
+.background-gray,
+.background-gray-mb {
   background-color: #f0f0f0; }
+
+@media screen and (min-width: 678px) {
+  .background-gray-mb {
+    background-color: transparent; } }
 
 .right {
   float: right; }
@@ -74,9 +82,15 @@
 
 .side-padding {
   padding: 0 7.5%; }
+  @media screen and (min-width: 678px) {
+    .side-padding {
+      padding: 0 5%; } }
 
 .tb-margin {
-  margin: 20% 0; }
+  margin: 15% 0; }
+  @media screen and (min-width: 678px) {
+    .tb-margin {
+      margin: 7.5% 0; } }
 
 .tb-margin-small {
   margin: 10% 0; }
@@ -227,6 +241,9 @@ table {
   color: #626262;
   padding: 5%;
   margin-bottom: 30%; }
+  @media screen and (min-width: 678px) {
+    .c-button {
+      padding: 2.5% 5%; } }
 
 .c-form {
   position: relative;
@@ -253,6 +270,9 @@ table {
   height: 2rem; }
   .c-menu-icon__bar {
     border: 1px solid black; }
+  @media screen and (min-width: 678px) {
+    .c-menu-icon {
+      display: none; } }
 
 .c-menu {
   display: none;
@@ -266,11 +286,21 @@ table {
     margin-bottom: 0.5%;
     background-color: #f0f0f0;
     opacity: 0.9; }
+    @media screen and (min-width: 678px) {
+      .c-menu__item {
+        width: auto;
+        background-color: unset; } }
   .c-menu__link {
     width: 100%;
     font-size: 1.2em;
     padding: 1em 0;
     opacity: 1; }
+  @media screen and (min-width: 678px) {
+    .c-menu {
+      display: block;
+      position: initial;
+      width: unset;
+      flex-grow: 1; } }
 
 #menu:checked ~ .c-menu {
   display: block; }
@@ -284,6 +314,13 @@ html {
 .c-header {
   padding: 5%;
   padding-left: 7.5%; }
+  @media screen and (min-width: 678px) {
+    .c-header {
+      background-color: white;
+      opacity: 0.9; } }
+  @media screen and (min-width: 678px) {
+    .c-header__link {
+      flex-grow: 3; } }
   .c-header__title {
     font-family: "Inconsolata", serif;
     font-size: 2.5rem;
@@ -293,4 +330,18 @@ html {
     display: none; }
 
 .c-section:first-child {
-  padding-top: 20%; }
+  padding-top: 20%;
+  padding-right: unset;
+  padding-left: unset; }
+  @media screen and (min-width: 678px) {
+    .c-section:first-child {
+      padding-top: unset; } }
+
+@media screen and (min-width: 678px) {
+  .c-section--two-column > article {
+    width: 50%;
+    box-sizing: border-box; }
+    .c-section--two-column > article:nth-child(even) {
+      padding-left: 2.5%; }
+    .c-section--two-column > article:nth-child(odd) {
+      padding-right: 2.5%; } }

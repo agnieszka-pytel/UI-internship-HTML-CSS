@@ -1,0 +1,11 @@
+@mixin for-tablet {
+    @media screen and (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin for-desktop {
+    @media screen and (min-width: $desktop-width) {
+        @content;
+    }
+}
