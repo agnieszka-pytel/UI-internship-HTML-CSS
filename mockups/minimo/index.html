@@ -31,7 +31,7 @@
     </header>
 
     <main>
-        <section class="c-section side-padding no-padding-mb">
+        <section class="c-section side-padding">
             <img src="img/main-image.png" srcset="img/main-image@2x.png 2x, img/main-image@3x.png 3x" class="c-image--main">
         </section>
         <section class="c-section c-section--one-column flex flex-row">
@@ -43,7 +43,7 @@
                     omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
                     sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
                     modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                <input type="text" class="c-article__comment" placeholder="Leave a comment...">
+                <button class="c-article__comment">Leave a comment...</button>
             </article>
         </section>
         <section class="c-section c-section--two-column flex flex-row">
@@ -123,7 +123,20 @@
             <button class="c-button">Load more</button>
         </section>
     </main>
-    <footer></footer>
+    <footer class="c-footer background-gray side-padding">
+        <nav class="c-footer-menu flex flex-row flex-grow-1 flex-space-between">
+            <ul class="c-footer-menu__list flex flex-row flex-space-between">
+                <li class="c-footer-menu__item"><a class="c-footer-menu__link" href="#">Terms and conditions</a></li>
+                <li class="c-footer-menu__item"><a class="c-footer-menu__link" href="#">Privacy</a></li>
+            </ul>
+            <ul class="c-footer-menu__list flex flex-row flex-space-between">
+                <li class="c-footer-menu__item"><a class="c-footer-menu__link--no-animation">Follow</a></li>
+                <li class="c-footer-menu__item"><a class="c-footer-menu__link" href="#"><i class="c-footer-menu__icon fab fa-facebook-f"></i></a></li>
+                <li class="c-footer-menu__item"><a class="c-footer-menu__link" href="#"><i class="c-footer-menu__icon fab fa-twitter"></i></a></li>
+                <li class="c-footer-menu__item"><a class="c-footer-menu__link" href="#"><i class="c-footer-menu__icon fab fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>

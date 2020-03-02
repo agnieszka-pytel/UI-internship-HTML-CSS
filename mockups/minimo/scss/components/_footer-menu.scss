@@ -1,0 +1,15 @@
+.c-footer-menu {
+    color: black;
+    &__link {
+        @extend %footer-link;
+        &:hover {
+            @include move-up-left;
+        }
+    }
+    &__link--no-animation {
+        @extend %footer-link;
+    }
+    &__icon {
+        color: $dark-gray;
+    }
+}

@@ -4,3 +4,9 @@ html {
     font-size: $base-font-size;
     font-family: $main-font;
 }
+
+main {
+    @include for-desktop {
+        padding: 0 5%;
+    }
+}

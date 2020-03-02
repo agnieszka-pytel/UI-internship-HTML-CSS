@@ -1,9 +1,11 @@
 .c-header {
+    z-index: 1;
     padding: 5%;
     padding-left: 7.5%;
     @include for-tablet {
         background-color: white;
         opacity: 0.9;
+        padding: 4% 5%;
     }
     &__link {
         @include for-tablet {

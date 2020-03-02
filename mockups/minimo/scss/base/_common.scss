@@ -32,6 +32,12 @@
     justify-content: center;
 }
 
+.flex-grow {
+    &-1 {
+        flex-grow: 1;
+    }
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -69,7 +75,7 @@
 }
 
 .tb-margin {
-    margin: 15% 0;
+    margin: 10% 0;
     @include for-tablet {
         margin: 7.5% 0;
     }

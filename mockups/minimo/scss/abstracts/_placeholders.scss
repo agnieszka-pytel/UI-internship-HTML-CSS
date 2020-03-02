@@ -17,6 +17,11 @@
     color: inherit;
 }
 
+%footer-link {
+    @extend %link;
+    padding: 2em 1em;
+}
+
 %reset-inputs-buttons {
     border: none;
     background-image: none;
@@ -24,6 +29,7 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    cursor: pointer;
 }
 
 %paragraph {

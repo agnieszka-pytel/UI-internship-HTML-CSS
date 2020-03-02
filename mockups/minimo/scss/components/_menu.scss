@@ -21,6 +21,13 @@
         font-size: 1.2em;
         padding: 1em 0;
         opacity: 1;
+        @include for-desktop {
+            padding: 0.5em;
+            &:hover {
+                @include move-up-left;
+                color: black;
+            }
+        }
     }
     @include for-tablet {
         display: block;

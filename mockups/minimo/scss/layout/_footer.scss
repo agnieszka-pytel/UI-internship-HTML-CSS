@@ -1,0 +1,7 @@
+.c-footer {
+    display: none;
+    @include for-desktop {
+        display: flex;
+        margin-top: 100vh;
+    }
+}

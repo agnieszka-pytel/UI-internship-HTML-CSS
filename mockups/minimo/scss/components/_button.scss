@@ -9,4 +9,12 @@
     @include for-tablet {
         padding: 2.5% 5%;
     }
+    @include for-desktop {
+        &:hover {
+            background-color: $background-light-gray;
+            border-color: transparent;
+            color: black;
+            transition: all 0.3s linear;
+        }
+    }
 }

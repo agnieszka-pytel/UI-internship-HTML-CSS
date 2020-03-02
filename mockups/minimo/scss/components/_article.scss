@@ -4,6 +4,7 @@
     }
     &__comment {
         @extend %side-text;
+        @extend %reset-inputs-buttons;
         &::placeholder {
             color: $light-gray;
         }
