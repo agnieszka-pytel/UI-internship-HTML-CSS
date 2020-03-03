@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Product single page</title>
+</head>
+
+<body>
+    <header class="c-header">
+        <section>
+            <aticle class="c-article c-article--popup uppercase">
+                <p>start selling your products or buy them from anywhere!</p>
+                <i class="fas fa-times"></i>
+            </aticle>
+            <select id="choose-country" class="c-header__select">
+                <option value="USA">USA</option>
+                <option value="PL">PL</option>
+            </select>
+            <h1 class="c-header__logo">BONFIRE</h1>
+            <button class="c-header__button">CART (3)</button>
+        </section>
+        <nav class="c-header__menu">
+            <span><i class="fas fa-bars"></i></span>
+            <ul class="c-header__list">
+                <li><a>Home</a></li>
+                <li>Men <i class="fas fa-caret-down"></i>
+                    <ul class="c-header__list--dropdown">
+                        <li><a>Shirts</a></li>
+                        <li><a>Trousers</a></li>
+                        <li><a>Coats</a></li>
+                        <li><a>Basics</a></li>
+                        <li><a>Shoes</a></li>
+                    </ul>
+                </li>
+                <li>Women <i class="fas fa-caret-down"></i>
+                    <ul class="c-header__list--dropdown">
+                        <li><a>Shirts</a></li>
+                        <li><a>Dresses</a></li>
+                        <li><a>Coats</a></li>
+                        <li><a>Basics</a></li>
+                        <li><a>Shoes</a></li>
+                    </ul>
+                </li>
+                <li><a>Lookbook</a></li>
+                <li><a>About</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+            <div>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-search"></i></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="c-section">
+            <artcle>
+                <img class="c-img--primary" alt="main image">
+                <img class="c-img" alt="miniature image">
+                <img class="c-img" alt="miniature image">
+                <img class="c-img" alt="miniature image">
+                <img class="c-img" alt="miniature image">
+            </artcle>
+        </section>
+        <section class="c-section">
+            <article class="c-article">
+                <span class="c-article__breadcrumb"><i class="fas fa-angle-left"></i> Back to <a href="#">Woman</a></span>
+                <h2 class="c-article__product-name">The Atelier Tailored Coat</h2>
+                <div class="c-article__reviews">
+                    <span class="c-article__rating">
+                    <i class="fas fa-star star--yellow"></i>
+                    <i class="fas fa-star star--yellow"></i>
+                    <i class="fas fa-star star--yellow"></i>
+                    <i class="fas fa-star star--yellow"></i>
+                    <i class="fas fa-star"></i>
+                    3 Review(s)
+                </span>
+                    <span class="c-article__add-review"><a>Add a review</a></span>
+                </div>
+                <h3 class="c-article__price">$499.00</h3>
+                <ul class="c-article__detail-list c-list">
+                    <li class="c-list__item">
+                        <span class="c-list__label">Availability :</span><span class="c-list__value">In stock</span></li>
+                    <li class="c-list__item">
+                        <span class="c-list__label">Product code :</span><span class="c-list__value">In stock</span></li>
+                    <li class="c-list__item">
+                        <span class="c-list__label">Tags :</span><span class="c-list__value"><a href="#">Fashion</a>, <a href="#">Hood</a>, <a href="#">Classic</a></span></li>
+                </ul>
+                <p class="c-article__description">
+                    Sleek, polished, and boasting an impeccably modern fit, this blue, 2-but- ton Lazio suit features a notch lapel, flap pockets, and accompanying flat front trousers—all in pure wool by Vitale Barberis Canonico.
+                </p>
+                <ul class="c-article__description-list c-list">
+                    <li class="c-list__item">Dark blue suit for a tone-on-tone look</li>
+                    <li class="c-list__item">Regular fit</li>
+                    <li class="c-list__item">100% Cotton</li>
+                    <li class="c-list__item">Free shipping with 4 days delivery</li>
+                </ul>
+                <div class="c-article__product-options">
+                    <label for="product-color">color</label>
+                    <select>
+                        <option value="">Select color</option>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                    <label for="product-size">size</label>
+                    <select>
+                        <option value="">Select size</option>
+                        <option value="red">S</option>
+                        <option value="green">M</option>
+                        <option value="blue">L</option>
+                    </select>
+                    <label for="product-quantity">color</label>
+                    <input id="product-quantity" placeholder="1" type="number" min=1 max=100>
+                    <span class="c-article__clear-selection">Clear selection</span>
+                </div>
+                <button class="c-button--black">Add to cart</button>
+                <button class="c-button">
+                    <span><i class="far fa-heart"></i></span> Add to wishlist</button>
+            </article>
+        </section>
+        <section class="c-section--full">
+            <article class="c-article">
+                <span class="c-article">Share this</span>
+                <button class="c-button--social c-button--facebook-like"><i class="fab fa-facebook-square"></i>Like</button>
+                <button class="c-button--social c-button--facebook-share">Share</button>
+                <span class="c-button__label">235k</span>
+                <button class="c-button--social c-button--twitter"><i class="fab fa-twitter"></i>Tweet</button>
+                <span class="c-button__label">93</span>
+                <button class="c-button--social c-button--pinterest"><i class="fab fa-pinterest-p"></i>Pin it</button>
+                <span class="c-button__label">65K+</span>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Made with Love &amp; Coffee &copy; 2015 Design Lazy. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
