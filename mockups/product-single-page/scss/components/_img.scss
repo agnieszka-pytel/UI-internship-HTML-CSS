@@ -1,0 +1,13 @@
+%img {
+    background-color: $basic-background;
+    border: 1px solid $basic-background;
+    min-height: 80px;
+}
+
+.c-img {
+    @extend %img;
+    &--primary {
+        @extend %img;
+        grid-area: span 2 / span 2;
+    }
+}

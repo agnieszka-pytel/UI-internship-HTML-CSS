@@ -1,0 +1,9 @@
+.c-header {
+    color: $secondary-font-color;
+    &__logo {
+        font-weight: 900;
+        font-size: 1.75em;
+        padding: 15% 0;
+        width: 100%;
+    }
+}

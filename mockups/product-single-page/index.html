@@ -4,80 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be8589535f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Product single page</title>
 </head>
 
 <body>
-    <header class="c-header">
-        <section>
-            <aticle class="c-article c-article--popup uppercase">
-                <p>start selling your products or buy them from anywhere!</p>
-                <i class="fas fa-times"></i>
-            </aticle>
-            <select id="choose-country" class="c-header__select">
+    <header class="c-header flex flex-row flex-space-between">
+        <aticle class="c-article c-popup flex flex-center p-relative t-uppercase">
+            <p class="c-popup__text">start selling your products or buy them from anywhere!</p>
+            <i class="c-popup__close fas fa-times p-absolute"></i>
+        </aticle>
+        <select class="c-header__select" id="choose-country">
                 <option value="USA">USA</option>
                 <option value="PL">PL</option>
             </select>
-            <h1 class="c-header__logo">BONFIRE</h1>
-            <button class="c-header__button">CART (3)</button>
-        </section>
-        <nav class="c-header__menu">
-            <span><i class="fas fa-bars"></i></span>
-            <ul class="c-header__list">
-                <li><a>Home</a></li>
-                <li>Men <i class="fas fa-caret-down"></i>
-                    <ul class="c-header__list--dropdown">
-                        <li><a>Shirts</a></li>
-                        <li><a>Trousers</a></li>
-                        <li><a>Coats</a></li>
-                        <li><a>Basics</a></li>
-                        <li><a>Shoes</a></li>
+        <h1 class="c-header__logo t-center">BONFIRE</h1>
+        <button class="c-header__button">CART (3)</button>
+        <nav class="c-header__menu c-menu">
+            <label class="c-menu__icon" for="show-menu"><i class="fas fa-bars"></i></label>
+            <input class="c-menu__checkbox" type="checkbox" id="show-menu">
+            <ul class="c-menu__list c-list">
+                <li class="c-list__item"><a>Home</a></li>
+                <li class="c-list__item">Men <i class="fas fa-caret-down"></i>
+                    <ul class="c-menu__list--dropdown c-list">
+                        <li class="c-list__item"><a>Shirts</a></li>
+                        <li class="c-list__item"><a>Trousers</a></li>
+                        <li class="c-list__item"><a>Coats</a></li>
+                        <li class="c-list__item"><a>Basics</a></li>
+                        <li class="c-list__item"><a>Shoes</a></li>
                     </ul>
                 </li>
-                <li>Women <i class="fas fa-caret-down"></i>
-                    <ul class="c-header__list--dropdown">
-                        <li><a>Shirts</a></li>
-                        <li><a>Dresses</a></li>
-                        <li><a>Coats</a></li>
-                        <li><a>Basics</a></li>
-                        <li><a>Shoes</a></li>
+                <li class="c-list__item">Women <i class="fas fa-caret-down"></i>
+                    <ul class="c-menu__list--dropdown c-list">
+                        <li class="c-list__item"><a>Shirts</a></li>
+                        <li class="c-list__item"><a>Dresses</a></li>
+                        <li class="c-list__item"><a>Coats</a></li>
+                        <li class="c-list__item"><a>Basics</a></li>
+                        <li class="c-list__item"><a>Shoes</a></li>
                     </ul>
                 </li>
-                <li><a>Lookbook</a></li>
-                <li><a>About</a></li>
-                <li><a>Blog</a></li>
+                <li class="c-list__item"><a>Lookbook</a></li>
+                <li class="c-list__item"><a>About</a></li>
+                <li class="c-list__item"><a>Blog</a></li>
             </ul>
-            <div>
-                <span><i class="far fa-heart"></i></span>
-                <span><i class="fas fa-search"></i></span>
-            </div>
         </nav>
+        <div class="c-header__search">
+            <span><i class="far fa-heart"></i></span>
+            <span><i class="fas fa-search"></i></span>
+        </div>
     </header>
     <main>
-        <section class="c-section">
-            <artcle>
-                <img class="c-img--primary" alt="main image">
-                <img class="c-img" alt="miniature image">
-                <img class="c-img" alt="miniature image">
-                <img class="c-img" alt="miniature image">
-                <img class="c-img" alt="miniature image">
-            </artcle>
+        <section class="c-section--border-top padded">
+            <article class="c-article grid grid-4-2">
+                <div class="c-img--primary"></div>
+                <div class="c-img"></div>
+                <div class="c-img"></div>
+                <div class="c-img"></div>
+                <div class="c-img"></div>
+            </article>
         </section>
-        <section class="c-section">
+        <section class="c-section padded">
             <article class="c-article">
-                <span class="c-article__breadcrumb"><i class="fas fa-angle-left"></i> Back to <a href="#">Woman</a></span>
+                <span class="c-article__breadcrumb"><i class="fas fa-angle-left"></i> Back to <a class="c-article__link" href="#">Woman</a></span>
                 <h2 class="c-article__product-name">The Atelier Tailored Coat</h2>
                 <div class="c-article__reviews">
                     <span class="c-article__rating">
-                    <i class="fas fa-star star--yellow"></i>
-                    <i class="fas fa-star star--yellow"></i>
-                    <i class="fas fa-star star--yellow"></i>
-                    <i class="fas fa-star star--yellow"></i>
-                    <i class="fas fa-star"></i>
+                    <i class="c-article__star fas fa-star"></i>
+                    <i class="c-article__star fas fa-star"></i>
+                    <i class="c-article__star fas fa-star"></i>
+                    <i class="c-article__star fas fa-star"></i>
+                    <i class="c-article__star fas fa-star"></i>
                     3 Review(s)
-                </span>
-                    <span class="c-article__add-review"><a>Add a review</a></span>
+                    </span>
+                    <span class="c-article__add-review"><button class="c-button">Add a review</a></span>
                 </div>
                 <h3 class="c-article__price">$499.00</h3>
                 <ul class="c-article__detail-list c-list">
@@ -121,7 +121,7 @@
                     <span><i class="far fa-heart"></i></span> Add to wishlist</button>
             </article>
         </section>
-        <section class="c-section--full">
+        <section class="c-section--full padded">
             <article class="c-article">
                 <span class="c-article">Share this</span>
                 <button class="c-button--social c-button--facebook-like"><i class="fab fa-facebook-square"></i>Like</button>
@@ -134,7 +134,7 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="c-footer padded">
         <p>Made with Love &amp; Coffee &copy; 2015 Design Lazy. All Rights Reserved.</p>
     </footer>
 </body>

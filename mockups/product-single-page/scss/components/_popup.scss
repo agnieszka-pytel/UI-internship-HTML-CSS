@@ -1,0 +1,13 @@
+.c-popup {
+    color: $popup-font-color;
+    background-color: $popup-background;
+    &__text {
+        font-size: 0.75em;
+        padding: 2.5% 25%;
+    }
+    &__close {
+        right: 10%;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}

@@ -1,0 +1,46 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    &-row {
+        flex-direction: row;
+    }
+    &-center {
+        justify-content: center;
+    }
+    &-space-between {
+        justify-content: space-between;
+    }
+}
+
+.grid {
+    display: grid;
+    &-4-2 {
+        grid-template: 1fr 1fr / repeat(4, 1fr);
+        grid-gap: 15px;
+    }
+}
+
+.p {
+    &-absolute {
+        position: absolute;
+    }
+    &-relative {
+        position: relative;
+    }
+}
+
+.t {
+    &-uppercase {
+        text-transform: uppercase;
+    }
+    &-center {
+        text-align: center;
+    }
+}
+
+.padded {
+    padding: 2.5% 5%;
+    &:first-of-type {
+        padding: 5%;
+    }
+}
