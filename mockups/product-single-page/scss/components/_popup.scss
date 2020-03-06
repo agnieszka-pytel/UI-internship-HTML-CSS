@@ -1,9 +1,11 @@
 .c-popup {
+    width: 100%;
     color: $popup-font-color;
     background-color: $popup-background;
     &__text {
+        width: 60%;
         font-size: 0.75em;
-        padding: 2.5% 25%;
+        padding: 2.5%;
     }
     &__close {
         right: 10%;

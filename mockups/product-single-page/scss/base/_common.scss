@@ -4,6 +4,9 @@
     &-row {
         flex-direction: row;
     }
+    &-column {
+        flex-direction: column;
+    }
     &-center {
         justify-content: center;
     }
@@ -14,9 +17,15 @@
 
 .grid {
     display: grid;
-    &-4-2 {
+    &-2-4 {
         grid-template: 1fr 1fr / repeat(4, 1fr);
         grid-gap: 15px;
+    }
+    &-4-2 {
+        grid-template: 15% auto 15% auto / repeat(2, 1fr);
+    }
+    &-item {
+        padding: 3% 10%;
     }
 }
 
@@ -38,9 +47,30 @@
     }
 }
 
+.full {
+    width: 100%;
+}
+
 .padded {
     padding: 2.5% 5%;
     &:first-of-type {
         padding: 5%;
+    }
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.mobile-right {
+    text-align: right;
+}
+
+.border {
+    &-top {
+        border-top: 1px solid $basic-background;
+    }
+    &-bottom {
+        border-bottom: 1px solid $basic-background;
     }
 }

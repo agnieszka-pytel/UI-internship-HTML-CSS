@@ -12,51 +12,62 @@
 <body>
     <header class="c-header flex flex-row flex-space-between">
         <aticle class="c-article c-popup flex flex-center p-relative t-uppercase">
-            <p class="c-popup__text">start selling your products or buy them from anywhere!</p>
+            <p class="c-popup__text t-center">start selling your products or buy them from anywhere!</p>
             <i class="c-popup__close fas fa-times p-absolute"></i>
         </aticle>
-        <select class="c-header__select" id="choose-country">
-                <option value="USA">USA</option>
-                <option value="PL">PL</option>
-            </select>
-        <h1 class="c-header__logo t-center">BONFIRE</h1>
-        <button class="c-header__button">CART (3)</button>
-        <nav class="c-header__menu c-menu">
-            <label class="c-menu__icon" for="show-menu"><i class="fas fa-bars"></i></label>
-            <input class="c-menu__checkbox" type="checkbox" id="show-menu">
-            <ul class="c-menu__list c-list">
-                <li class="c-list__item"><a>Home</a></li>
-                <li class="c-list__item">Men <i class="fas fa-caret-down"></i>
-                    <ul class="c-menu__list--dropdown c-list">
-                        <li class="c-list__item"><a>Shirts</a></li>
-                        <li class="c-list__item"><a>Trousers</a></li>
-                        <li class="c-list__item"><a>Coats</a></li>
-                        <li class="c-list__item"><a>Basics</a></li>
-                        <li class="c-list__item"><a>Shoes</a></li>
-                    </ul>
-                </li>
-                <li class="c-list__item">Women <i class="fas fa-caret-down"></i>
-                    <ul class="c-menu__list--dropdown c-list">
-                        <li class="c-list__item"><a>Shirts</a></li>
-                        <li class="c-list__item"><a>Dresses</a></li>
-                        <li class="c-list__item"><a>Coats</a></li>
-                        <li class="c-list__item"><a>Basics</a></li>
-                        <li class="c-list__item"><a>Shoes</a></li>
-                    </ul>
-                </li>
-                <li class="c-list__item"><a>Lookbook</a></li>
-                <li class="c-list__item"><a>About</a></li>
-                <li class="c-list__item"><a>Blog</a></li>
-            </ul>
-        </nav>
-        <div class="c-header__search">
-            <span><i class="far fa-heart"></i></span>
-            <span><i class="fas fa-search"></i></span>
-        </div>
+        <section class="c-header__section c-section full grid grid-4-2">
+            <button class="c-header__button grid-item mobile-right">CART (3)</button>
+            <div class="c-header__select c-select grid-item">
+                <div class="c-select__wrapper">
+                    <label class="c-select__label" for="choose-country"><img class="c-select__img" src="img/usa-flag.png"
+                    srcset="img/usa-flag@2x.png 2x,
+                            img/usa-flag@3x.png 3x"
+                    class="USA-FLAG"></label>
+                    <select class="c-select__options" id="choose-country">
+                    <option value="USD">USD</option>
+                    <option value="PLN">PLN</option>
+                 </select>
+                </div>
+            </div>
+            <div class="c-header__bar"></div>
+            <nav class="c-header__menu c-menu grid-item">
+                <label class="c-menu__icon" for="show-menu"><i class="fas fa-bars"></i></label>
+                <input class="c-menu__checkbox" type="checkbox" id="show-menu">
+                <ul class="c-menu__list c-list">
+                    <li class="c-list__item"><a>Home</a></li>
+                    <li class="c-list__item">Men <i class="fas fa-caret-down"></i>
+                        <ul class="c-menu__list--dropdown c-list">
+                            <li class="c-list__item"><a>Shirts</a></li>
+                            <li class="c-list__item"><a>Trousers</a></li>
+                            <li class="c-list__item"><a>Coats</a></li>
+                            <li class="c-list__item"><a>Basics</a></li>
+                            <li class="c-list__item"><a>Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-list__item">Women <i class="fas fa-caret-down"></i>
+                        <ul class="c-menu__list--dropdown c-list">
+                            <li class="c-list__item"><a>Shirts</a></li>
+                            <li class="c-list__item"><a>Dresses</a></li>
+                            <li class="c-list__item"><a>Coats</a></li>
+                            <li class="c-list__item"><a>Basics</a></li>
+                            <li class="c-list__item"><a>Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-list__item"><a>Lookbook</a></li>
+                    <li class="c-list__item"><a>About</a></li>
+                    <li class="c-list__item"><a>Blog</a></li>
+                </ul>
+            </nav>
+            <div class="c-header__search grid-item mobile-right">
+                <span class="c-header__icon"><i class="far fa-heart"></i></span>
+                <span class="c-header__icon"><i class="fas fa-search"></i></span>
+            </div>
+            <h1 class="c-header__logo t-center grid-item">BONFIRE</h1>
+        </section>
     </header>
     <main>
-        <section class="c-section--border-top padded">
-            <article class="c-article grid grid-4-2">
+        <section class="c-section border-top padded centered">
+            <article class="c-article grid grid-2-4">
                 <div class="c-img--primary"></div>
                 <div class="c-img"></div>
                 <div class="c-img"></div>
@@ -65,77 +76,83 @@
             </article>
         </section>
         <section class="c-section padded">
-            <article class="c-article">
-                <span class="c-article__breadcrumb"><i class="fas fa-angle-left"></i> Back to <a class="c-article__link" href="#">Woman</a></span>
-                <h2 class="c-article__product-name">The Atelier Tailored Coat</h2>
-                <div class="c-article__reviews">
-                    <span class="c-article__rating">
-                    <i class="c-article__star fas fa-star"></i>
-                    <i class="c-article__star fas fa-star"></i>
-                    <i class="c-article__star fas fa-star"></i>
-                    <i class="c-article__star fas fa-star"></i>
-                    <i class="c-article__star fas fa-star"></i>
+            <article class="c-article c-product">
+                <span class="c-product__breadcrumb"><i class="fas fa-angle-left"></i> Back to <a class="c-article__link" href="#">Woman</a></span>
+                <h2 class="c-product__name">The Atelier Tailored Coat</h2>
+                <div class="c-product__reviews">
+                    <span class="c-product__rating">
+                    <i class="c-product__star fas fa-star"></i>
+                    <i class="c-product__star fas fa-star"></i>
+                    <i class="c-product__star fas fa-star"></i>
+                    <i class="c-product__star fas fa-star"></i>
+                    <i class="c-product__star fas fa-star"></i>
                     3 Review(s)
                     </span>
-                    <span class="c-article__add-review"><button class="c-button">Add a review</a></span>
+                    <button class="c-button c-button--side c-button--border-left">Add a review</button>
                 </div>
-                <h3 class="c-article__price">$499.00</h3>
-                <ul class="c-article__detail-list c-list">
+                <h3 class="c-product__price">$499.00</h3>
+                <ul class="c-product__list c-list c-list--details">
                     <li class="c-list__item">
                         <span class="c-list__label">Availability :</span><span class="c-list__value">In stock</span></li>
                     <li class="c-list__item">
                         <span class="c-list__label">Product code :</span><span class="c-list__value">In stock</span></li>
                     <li class="c-list__item">
-                        <span class="c-list__label">Tags :</span><span class="c-list__value"><a href="#">Fashion</a>, <a href="#">Hood</a>, <a href="#">Classic</a></span></li>
+                        <span class="c-list__label">Tags :</span><a class="c-list__value" href="#">Fashion</a>, <a class="c-list__value" href="#">Hood</a>, <a class="c-list__value" href="#">Classic</a></li>
                 </ul>
-                <p class="c-article__description">
+                <p class="c-product__description">
                     Sleek, polished, and boasting an impeccably modern fit, this blue, 2-but- ton Lazio suit features a notch lapel, flap pockets, and accompanying flat front trousers—all in pure wool by Vitale Barberis Canonico.
                 </p>
-                <ul class="c-article__description-list c-list">
+                <ul class="c-product__list c-list c-list--descriptions">
                     <li class="c-list__item">Dark blue suit for a tone-on-tone look</li>
                     <li class="c-list__item">Regular fit</li>
                     <li class="c-list__item">100% Cotton</li>
                     <li class="c-list__item">Free shipping with 4 days delivery</li>
                 </ul>
-                <div class="c-article__product-options">
-                    <label for="product-color">color</label>
-                    <select>
-                        <option value="">Select color</option>
+                <div class="c-product__options">
+                    <label class="c-product__label t-uppercase" for="product-color">color</label>
+                    <div class="c-select__wrapper c-select__wrapper--gray-icon c-select__wrapper--wide">
+                        <select class="c-product__option-value c-product__option-value--select">
+                        <option value="">Select Color</option>
                         <option value="red">Red</option>
                         <option value="green">Green</option>
                         <option value="blue">Blue</option>
                     </select>
-                    <label for="product-size">size</label>
-                    <select>
-                        <option value="">Select size</option>
+                    </div>
+                    <label class="c-product__label t-uppercase" for="product-size">size</label>
+                    <div class="c-select__wrapper c-select__wrapper--gray-icon c-select__wrapper--wide">
+                        <select class="c-product__option-value c-product__option-value--select">
+                        <option value="">Select Size</option>
                         <option value="red">S</option>
                         <option value="green">M</option>
                         <option value="blue">L</option>
                     </select>
-                    <label for="product-quantity">color</label>
-                    <input id="product-quantity" placeholder="1" type="number" min=1 max=100>
-                    <span class="c-article__clear-selection">Clear selection</span>
+                    </div>
+                    <label class="c-product__label t-uppercase" for="product-quantity">qty</label>
+                    <div class="c-product__option-wrapper">
+                        <input class="c-product__option-value c-product__option-value--input" id="product-quantity" placeholder="1" type="number" min=1 max=100>
+                    </div>
+                    <button class="c-button c-button--side c-button--with-margin t-smaller">Clear selection</button>
                 </div>
-                <button class="c-button--black">Add to cart</button>
-                <button class="c-button">
+                <button class="c-button c-button--cta c-button--black t-uppercase">Add to cart</button>
+                <button class="c-button c-button--cta t-uppercase">
                     <span><i class="far fa-heart"></i></span> Add to wishlist</button>
             </article>
         </section>
-        <section class="c-section--full padded">
-            <article class="c-article">
-                <span class="c-article">Share this</span>
-                <button class="c-button--social c-button--facebook-like"><i class="fab fa-facebook-square"></i>Like</button>
-                <button class="c-button--social c-button--facebook-share">Share</button>
+        <section class="c-section--not-full border-top border-bottom centered">
+            <article class="c-article c-social">
+                <span class="c-social__title t-uppercase">Share this</span>
+                <button class="c-button--social c-button--facebook-like c-button--t-white"><i class="c-button__icon--facebook fab fa-facebook-square"></i> Like</button>
+                <button class="c-button--social c-button--facebook c-button--t-white">Share</button>
                 <span class="c-button__label">235k</span>
-                <button class="c-button--social c-button--twitter"><i class="fab fa-twitter"></i>Tweet</button>
+                <button class="c-button--social c-button--twitter"><i class="c-button__icon--twitter fab fa-twitter"></i> Tweet</button>
                 <span class="c-button__label">93</span>
-                <button class="c-button--social c-button--pinterest"><i class="fab fa-pinterest-p"></i>Pin it</button>
+                <button class="c-button--social c-button--pinterest"><i class="c-button__icon--pinterest fab fa-pinterest-p"></i> Pin it</button>
                 <span class="c-button__label">65K+</span>
             </article>
         </section>
     </main>
-    <footer class="c-footer padded">
-        <p>Made with Love &amp; Coffee &copy; 2015 Design Lazy. All Rights Reserved.</p>
+    <footer class="c-footer border-top padded">
+        <p class="c-footer__text t-center">Made with Love &amp; Coffee &copy; 2015 Design Lazy. All Rights Reserved.</p>
     </footer>
 </body>
 

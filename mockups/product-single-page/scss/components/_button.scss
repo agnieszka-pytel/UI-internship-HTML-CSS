@@ -1,0 +1,66 @@
+.c-button {
+    font-size: 0.8em;
+    @extend %button-reset;
+    &__label {
+        font-size: 0.8em;
+    }
+    &--side {
+        @extend %side-button;
+    }
+    &--cta {
+        width: 100%;
+        padding: 1.5em 0;
+        border: 1px solid $basic-background;
+        font-weight: bolder;
+        color: $secondary-font-color;
+    }
+    &--social {
+        padding: 0.25em;
+        cursor: pointer;
+        border-radius: 0.25em;
+    }
+    &--black {
+        background-color: black;
+        border: 1px solid black;
+        color: white;
+        margin-bottom: 5%;
+    }
+    &--border-left {
+        margin-left: 2%;
+        padding-left: 2%;
+        border-left: 2px solid $primary-font-color;
+    }
+    &--with-margin {
+        margin: 15% 0;
+    }
+    &--t-white {
+        color: white;
+    }
+    &--facebook-like {
+        @include button-layout(#4b67bc, #3a53a3);
+    }
+    &--facebook {
+        @include button-layout(#5a78d6, #4c69bc);
+        margin-left: 1%;
+    }
+    &--twitter {
+        @include button-layout(#ffffff, #dedede, #cccccc);
+    }
+    &--pinterest {
+        @include button-layout(#ffffff, #e7e7e7, #afafab);
+        margin-left: 5%;
+    }
+    &__icon {
+        &--twitter {
+            color: #00acee;
+        }
+        &--pinterest {
+            color: #c8232c;
+        }
+    }
+    &__label {
+        margin-left: 1%;
+        padding: 0.25em;
+        border: 1px solid $basic-background;
+    }
+}

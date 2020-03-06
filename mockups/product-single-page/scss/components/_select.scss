@@ -1,0 +1,18 @@
+.c-select {
+    &__img {
+        width: 1em;
+    }
+    &__wrapper {
+        @extend %select-wrapper;
+        &:after {
+            @extend %select-after;
+            content: "\f0d7";
+        }
+        &--gray-icon:after {
+            color: $caret-down-background;
+        }
+        &--wide {
+            width: 60%;
+        }
+    }
+}

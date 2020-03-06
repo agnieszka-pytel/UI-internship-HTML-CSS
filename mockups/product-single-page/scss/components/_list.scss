@@ -1,0 +1,15 @@
+.c-list {
+    margin: 5% 0;
+    &__label {
+        font-weight: bolder;
+    }
+    &__value {
+        @extend %link;
+        color: $accent-font-color;
+        margin-left: 1%;
+    }
+    &--descriptions {
+        list-style: initial;
+        list-style-position: inside;
+    }
+}

@@ -2,3 +2,39 @@
     color: inherit;
     text-decoration: unset;
 }
+
+%select-wrapper {
+    width: max-content;
+    position: relative;
+}
+
+%icon-before-after {
+    color: $primary-font-color;
+    font-family: FontAwesome;
+    position: absolute;
+}
+
+%select-after {
+    @extend %icon-before-after;
+    right: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: -1;
+}
+
+%side-button {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+%button-reset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    border-radius: unset;
+}
