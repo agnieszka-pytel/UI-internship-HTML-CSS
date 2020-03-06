@@ -1,40 +1,43 @@
 .c-header {
     color: $secondary-font-color;
+    &--mobile {
+        @include for-tablet {
+            display: none;
+        }
+    }
+    &--desktop {
+        display: none;
+        @include for-tablet {
+            display: unset;
+        }
+    }
     &__logo {
         grid-column: span 2;
         font-weight: 900;
         font-size: 1.75em;
-        padding: 15% 0;
+        padding: 10% 0 15% 0;
         width: 100%;
-    }
-    &__select {
-        grid-row: 3;
-        grid-column: 1;
-    }
-    &__bar {
-        height: 10px;
-        border-top: 1px solid $basic-background;
-        grid-row: 2;
-        grid-column: 1 / span 2;
-    }
-    &__menu {
-        grid-row: 1;
-        grid-column: 1;
-    }
-    &__search {
-        grid-row: 3;
-        grid-column: 2;
+        @include for-tablet {
+            width: unset;
+            padding: unset;
+            line-height: 2em;
+        }
     }
     &__button {
         display: inline-block;
-        grid-row: 1;
-        grid-column: 2;
+        padding: unset;
+        @include for-tablet {
+            padding: 0 4em;
+            background-color: transparent;
+            border: 2px solid $star-background;
+        }
     }
     &__icon {
+        display: inline-block;
         &:first-child {
-            padding-right: 7.5%;
+            padding-right: 0.75em;
             border-right: 1px dotted $basic-background;
-            margin-right: 5%;
+            margin-right: 0.75em;
         }
     }
 }

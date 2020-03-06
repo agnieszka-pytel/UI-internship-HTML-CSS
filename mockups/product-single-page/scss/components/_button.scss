@@ -13,6 +13,14 @@
         border: 1px solid $basic-background;
         font-weight: bolder;
         color: $secondary-font-color;
+        @include for-tablet {
+            width: 48%;
+        }
+        &:last-child {
+            @include for-tablet {
+                float: right;
+            }
+        }
     }
     &--social {
         padding: 0.25em;

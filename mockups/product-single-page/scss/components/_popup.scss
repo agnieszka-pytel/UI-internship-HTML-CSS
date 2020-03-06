@@ -6,6 +6,9 @@
         width: 60%;
         font-size: 0.75em;
         padding: 2.5%;
+        @include for-tablet {
+            padding: 1% 0;
+        }
     }
     &__close {
         right: 10%;

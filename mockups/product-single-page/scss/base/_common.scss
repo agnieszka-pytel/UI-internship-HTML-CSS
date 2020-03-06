@@ -7,11 +7,17 @@
     &-column {
         flex-direction: column;
     }
+    &-vcenter {
+        align-content: center;
+    }
     &-center {
         justify-content: center;
     }
     &-space-between {
         justify-content: space-between;
+    }
+    &-no-wrap {
+        flex-wrap: nowrap;
     }
 }
 
@@ -20,6 +26,9 @@
     &-2-4 {
         grid-template: 1fr 1fr / repeat(4, 1fr);
         grid-gap: 15px;
+        @include for-tablet {
+            grid-template: repeat(4, 1fr) / 1fr 1fr;
+        }
     }
     &-4-2 {
         grid-template: 15% auto 15% auto / repeat(2, 1fr);
@@ -53,13 +62,28 @@
 
 .padded {
     padding: 2.5% 5%;
+    @include for-tablet {
+        padding: 2.5% 10%;
+    }
+    &-small {
+        padding: 2% 5%;
+        @include for-tablet {
+            padding: 2.5% 10%;
+        }
+    }
     &:first-of-type {
         padding: 5%;
+        @include for-tablet {
+            padding: 2.5% 10%;
+        }
     }
 }
 
 .centered {
     margin: 0 auto;
+    @include for-tablet {
+        margin: unset;
+    }
 }
 
 .mobile-right {

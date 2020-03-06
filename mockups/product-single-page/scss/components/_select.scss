@@ -4,6 +4,7 @@
     }
     &__wrapper {
         @extend %select-wrapper;
+        line-height: 1em;
         &:after {
             @extend %select-after;
             content: "\f0d7";

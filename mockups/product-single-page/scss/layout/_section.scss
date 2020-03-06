@@ -2,4 +2,26 @@
     &--not-full {
         width: 90%;
     }
+    &--main {
+        padding: 5% 5% 2.5% 5%;
+        @include for-tablet {
+            width: 50%;
+            padding: 5% 10% 2.5% 10%;
+            box-sizing: border-box;
+            &:nth-child(odd) {
+                padding-right: 2.5%;
+            }
+            &:nth-child(even) {
+                padding-left: 2.5%;
+            }
+            &:last-child {
+                align-self: flex-end;
+                padding-right: 0;
+                margin-right: 10%;
+                padding-left: 2.5%;
+                padding-top: 0;
+                margin-left: auto;
+            }
+        }
+    }
 }

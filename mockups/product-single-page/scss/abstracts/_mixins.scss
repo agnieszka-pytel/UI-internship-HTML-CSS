@@ -2,3 +2,15 @@
     border: 1px solid $border;
     background-image: linear-gradient(to top, $gradient-bottom, $gradient-top);
 }
+
+@mixin for-tablet {
+    @media screen and (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin for-desktop {
+    @media screen and (min-width: $desktop-width) {
+        @content;
+    }
+}
