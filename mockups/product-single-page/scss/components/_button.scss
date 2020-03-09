@@ -1,9 +1,6 @@
 .c-button {
     font-size: 0.8em;
     @extend %button-reset;
-    &__label {
-        font-size: 0.8em;
-    }
     &--side {
         @extend %side-button;
     }
@@ -65,10 +62,5 @@
         &--pinterest {
             color: #c8232c;
         }
-    }
-    &__label {
-        margin-left: 1%;
-        padding: 0.25em;
-        border: 1px solid $basic-background;
     }
 }

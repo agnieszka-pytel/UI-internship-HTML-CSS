@@ -1,0 +1,28 @@
+.c-label {
+    font-size: 0.8em;
+    margin-left: 1%;
+    padding: 0.25em;
+    border: 1px solid $basic-background;
+    border-left: none;
+    position: relative;
+    &::before {
+        @extend %partial-border;
+        top: 0;
+    }
+    &::after {
+        @extend %partial-border;
+        bottom: 0;
+    }
+    &__wrapper {
+        margin-left: 1%;
+        display: inline;
+        position: relative;
+        &::before {
+            @extend %caret-left;
+            top: 30%;
+            height: 40%;
+            font-size: 50%;
+            line-height: 100%;
+        }
+    }
+}

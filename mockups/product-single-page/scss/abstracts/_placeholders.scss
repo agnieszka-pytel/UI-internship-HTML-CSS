@@ -38,3 +38,21 @@
     font-family: inherit;
     border-radius: unset;
 }
+
+%partial-border {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 30%;
+    border: 0.5px solid $basic-background;
+}
+
+%caret-left {
+    position: absolute;
+    font-size: 100%;
+    line-height: 100%;
+    font-family: FontAwesome;
+    color: $basic-background;
+    content: '\f053';
+}
