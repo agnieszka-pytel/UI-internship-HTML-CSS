@@ -515,6 +515,12 @@ table {
 .c-social {
   padding: 5% 0;
   line-height: 2.5em; }
+  @media screen and (min-width: 1024px) {
+    .c-social {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; } }
   .c-social__title {
     font-size: 0.8em;
     margin-right: 40%; }

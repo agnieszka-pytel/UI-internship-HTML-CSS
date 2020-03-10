@@ -1,6 +1,12 @@
 .c-social {
     padding: 5% 0;
     line-height: 2.5em;
+    @include for-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__title {
         font-size: 0.8em;
         margin-right: 40%;
