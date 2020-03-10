@@ -14,12 +14,26 @@
     position: absolute;
 }
 
+%select-arrow {
+    @extend %icon-before-after;
+    color: $basic-background;
+    right: 0;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.75em;
+    border-left: 1px solid $basic-background;
+}
+
 %select-after {
     @extend %icon-before-after;
-    right: 5%;
+    right: 0;
     top: 50%;
     transform: translate(0, -50%);
     z-index: -1;
+    @include for-desktop {
+        right: -10%;
+    }
 }
 
 %side-button {
@@ -46,6 +60,9 @@
     left: 0;
     height: 30%;
     border: 0.5px solid $basic-background;
+    @include for-desktop {
+        display: none;
+    }
 }
 
 %caret-left {

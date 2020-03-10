@@ -4,23 +4,37 @@
     }
     &--main {
         padding: 5% 5% 2.5% 5%;
+        width: 100%;
+        &:first-child {
+            border-top: 1px solid $basic-background;
+        }
         @include for-tablet {
+            border-top: none;
             width: 50%;
             padding: 5% 10% 2.5% 10%;
             box-sizing: border-box;
+            &:first-child {
+                border-top: none;
+            }
             &:nth-child(odd) {
-                padding-right: 2.5%;
+                padding-right: 1%;
             }
             &:nth-child(even) {
-                padding-left: 2.5%;
+                padding-left: 1%;
             }
             &:last-child {
                 align-self: flex-end;
                 padding-right: 10%;
-                padding-left: 2.5%;
+                padding-left: 1%;
                 padding-top: 0;
                 margin-left: auto;
+                @include for-desktop {
+                    padding-right: 15%;
+                }
             }
+        }
+        @include for-desktop {
+            padding: 5% 15% 2.5% 15%;
         }
     }
 }

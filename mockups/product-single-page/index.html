@@ -20,10 +20,10 @@
                 <nav class="c-header__menu c-menu">
                     <label class="c-menu__icon" for="show-menu"><i class="fas fa-bars"></i></label>
                     <input class="c-menu__checkbox" type="checkbox" id="show-menu">
-                    <ul class="c-menu__list c-list">
+                    <ul class="c-menu-list c-list">
                         <li class="c-list__item"><a>Home</a></li>
                         <li class="c-list__item">Men <i class="fas fa-caret-down"></i>
-                            <ul class="c-menu__list--dropdown c-list">
+                            <ul class="c-menu-list__dropdown c-list">
                                 <li class="c-list__item"><a>Shirts</a></li>
                                 <li class="c-list__item"><a>Trousers</a></li>
                                 <li class="c-list__item"><a>Coats</a></li>
@@ -32,7 +32,7 @@
                             </ul>
                         </li>
                         <li class="c-list__item">Women <i class="fas fa-caret-down"></i>
-                            <ul class="c-menu__list--dropdown c-list">
+                            <ul class="c-menu-list__dropdown c-list">
                                 <li class="c-list__item"><a>Shirts</a></li>
                                 <li class="c-list__item"><a>Dresses</a></li>
                                 <li class="c-list__item"><a>Coats</a></li>
@@ -76,7 +76,7 @@
             <i class="c-popup__close fas fa-times p-absolute"></i>
         </aticle>
         <section class="c-header__section c-section full">
-            <div class="flex-wrapper flex flex-row flex-space-between padded">
+            <div class="flex-wrapper flex flex-row flex-space-between padded p-relative">
                 <div class="c-header__select c-select flex flex-vcenter">
                     <div class="c-select__wrapper">
                         <label class="c-select__label" for="choose-country"><img class="c-select__img" src="img/usa-flag.png"
@@ -120,7 +120,7 @@
                         <li class="c-menu-list__item "><a>About</a></li>
                         <li class="c-menu-list__item "><a>Blog</a></li>
                     </ul>
-                    <div class="c-header__search flex flex-row flex-space-between flex-no-wrap ">
+                    <div class="c-header__search flex flex-row flex-space-between flex-no-wrap">
                         <span class="c-header__icon "><i class="far fa-heart "></i></span>
                         <span class="c-header__icon "><i class="fas fa-search "></i></span>
                     </div>
@@ -171,46 +171,54 @@
                     <li class="c-list__item ">100% Cotton</li>
                     <li class="c-list__item ">Free shipping with 4 days delivery</li>
                 </ul>
-                <div class="c-product__options ">
-                    <label class="c-product__label t-uppercase " for="product-color ">color</label>
-                    <div class="c-select__wrapper c-select__wrapper--gray-icon c-select__wrapper--wide ">
-                        <select class="c-product__option-value c-product__option-value--select ">
-                        <option value=" ">Select Color</option>
-                        <option value="red ">Red</option>
-                        <option value="green ">Green</option>
-                        <option value="blue ">Blue</option>
-                    </select>
+                <div class="c-product__options flex flex-column flex-space-between flex-no-wrap">
+                    <div class="c-product__property-wrapper">
+                        <label class="c-product__label t-uppercase " for="product-color ">color</label>
+                        <div class="c-select__wrapper c-select__wrapper--gray-icon c-select__wrapper--wide ">
+                            <select class="c-product__option-value c-product__option-value--select ">
+                                <option value=" ">Select Color</option>
+                                <option value="red ">Red</option>
+                                <option value="green ">Green</option>
+                                <option value="blue ">Blue</option>
+                            </select>
+                        </div>
                     </div>
-                    <label class="c-product__label t-uppercase " for="product-size ">size</label>
-                    <div class="c-select__wrapper c-select__wrapper--gray-icon c-select__wrapper--wide ">
-                        <select class="c-product__option-value c-product__option-value--select ">
-                        <option value=" ">Select Size</option>
-                        <option value="red ">S</option>
-                        <option value="green ">M</option>
-                        <option value="blue ">L</option>
-                    </select>
+                    <div class="c-product__property-wrapper">
+                        <label class="c-product__label t-uppercase " for="product-size ">size</label>
+                        <div class="c-select__wrapper c-select__wrapper--gray-icon c-select__wrapper--wide ">
+                            <select class="c-product__option-value c-product__option-value--select ">
+                            <option value=" ">Select Size</option>
+                            <option value="red ">S</option>
+                            <option value="green ">M</option>
+                            <option value="blue ">L</option>
+                            </select>
+                        </div>
                     </div>
-                    <label class="c-product__label t-uppercase " for="product-quantity ">qty</label>
-                    <div class="c-product__option-wrapper ">
-                        <input class="c-product__option-value c-product__option-value--input " id="product-quantity " placeholder="1 " type="number " min=1 max=100>
+                    <div class="c-product__property-wrapper">
+                        <label class="c-product__label t-uppercase " for="product-quantity ">qty</label>
+                        <div class="c-product__option-wrapper ">
+                            <input class="c-product__option-value c-product__option-value--input " id="product-quantity " placeholder="1 " type="number " min=1 max=100>
+                        </div>
                     </div>
-                    <button class="c-button c-button--side c-button--with-margin t-smaller ">Clear selection</button>
                 </div>
-                <button class="c-button c-button--cta c-button--black t-uppercase ">Add to cart</button>
-                <button class="c-button c-button--cta t-uppercase ">
+                <button class="c-button c-button--side c-button--with-margin t-smaller ">Clear selection</button>
+                <div class="c-button__wrapper">
+                    <button class="c-button c-button--cta c-button--black t-uppercase ">Add to cart</button>
+                    <button class="c-button c-button--cta t-uppercase ">
                     <span><i class="far fa-heart "></i></span> Add to wishlist</button>
+                </div>
             </article>
         </section>
         <section class="c-section--not-full c-section--main centered ">
-            <article class="c-article c-social border-top border-bottom ">
-                <span class="c-social__title t-uppercase ">Share this</span>
+            <article class="c-article c-social border-top border-bottom flex flex-row flex-space-between flex-vcenter">
+                <span class=" c-social__title t-uppercase ">Share this</span>
                 <button class="c-button--social c-button--facebook-like c-button--t-white "><i class="c-button__icon--facebook fab fa-facebook-square "></i> Like</button>
                 <button class="c-button--social c-button--facebook c-button--t-white ">Share</button>
-                <div class="c-label__wrapper"><span class="c-label">235k</span></div>
+                <div class="c-label__wrapper "><span class="c-label ">235k</span></div>
                 <button class="c-button--social c-button--twitter "><i class="c-button__icon--twitter fab fa-twitter "></i> Tweet</button>
-                <div class="c-label__wrapper"><span class="c-label">93</span></div>
+                <div class="c-label__wrapper "><span class="c-label ">93</span></div>
                 <button class="c-button--social c-button--pinterest "><i class="c-button__icon--pinterest fab fa-pinterest-p "></i> Pin it</button>
-                <div class="c-label__wrapper"><span class="c-label">65K+</span></div>
+                <div class="c-label__wrapper "><span class="c-label ">65K+</span></div>
             </article>
         </section>
     </main>

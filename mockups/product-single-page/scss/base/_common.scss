@@ -8,7 +8,7 @@
         flex-direction: column;
     }
     &-vcenter {
-        align-content: center;
+        align-items: center;
     }
     &-center {
         justify-content: center;
@@ -28,6 +28,9 @@
         grid-gap: 15px;
         @include for-tablet {
             grid-template: repeat(4, 1fr) / 1fr 1fr;
+        }
+        @include for-desktop {
+            grid-template: 4fr 1fr / repeat(4, 1fr);
         }
     }
     &-4-2 {
@@ -65,16 +68,25 @@
     @include for-tablet {
         padding: 2.5% 10%;
     }
+    @include for-desktop {
+        padding: 2.5% 15%;
+    }
     &-small {
         padding: 2% 5%;
         @include for-tablet {
             padding: 2.5% 10%;
+        }
+        @include for-desktop {
+            padding: 2.5% 15%;
         }
     }
     &:first-of-type {
         padding: 5%;
         @include for-tablet {
             padding: 2.5% 10%;
+        }
+        @include for-desktop {
+            padding: 2.5% 15%;
         }
     }
 }

@@ -3,8 +3,10 @@
     font-size: 0.85em;
     @include for-tablet {
         display: flex;
-        width: 100%;
-        margin: 0 4em;
+        width: 75%;
+    }
+    @include for-desktop {
+        width: 50%;
     }
     &__dropdown {
         display: none;

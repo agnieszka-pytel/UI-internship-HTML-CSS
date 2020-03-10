@@ -1,6 +1,10 @@
 .c-select {
+    font-size: 0.8em;
     &__img {
         width: 1em;
+    }
+    &__options {
+        padding-right: 1em;
     }
     &__wrapper {
         @extend %select-wrapper;
@@ -14,6 +18,9 @@
         }
         &--wide {
             width: 60%;
+            @include for-desktop {
+                width: max-content;
+            }
         }
     }
 }

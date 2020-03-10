@@ -20,6 +20,10 @@
         @include for-tablet {
             width: unset;
             padding: unset;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
             line-height: 2em;
         }
     }
@@ -27,7 +31,7 @@
         display: inline-block;
         padding: unset;
         @include for-tablet {
-            padding: 0 4em;
+            padding: 1em 4em;
             background-color: transparent;
             border: 2px solid $star-background;
         }

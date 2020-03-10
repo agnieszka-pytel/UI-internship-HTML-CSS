@@ -3,6 +3,7 @@
     @extend %button-reset;
     &--side {
         @extend %side-button;
+        text-align: left;
     }
     &--cta {
         width: 100%;
@@ -20,6 +21,7 @@
         }
     }
     &--social {
+        height: max-content;
         padding: 0.25em;
         cursor: pointer;
         border-radius: 0.25em;
@@ -54,6 +56,9 @@
     &--pinterest {
         @include button-layout(#ffffff, #e7e7e7, #afafab);
         margin-left: 5%;
+        @include for-desktop {
+            margin-left: 0;
+        }
     }
     &__icon {
         &--twitter {

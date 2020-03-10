@@ -1,9 +1,9 @@
 %img {
     background-color: $basic-background;
     border: 1px solid $basic-background;
-    min-height: 75px;
+    min-height: 10vh;
     @include for-tablet {
-        min-height: 150px;
+        min-height: 12.5vh;
     }
 }
 
@@ -12,6 +12,9 @@
     &--primary {
         @extend %img;
         grid-area: span 2 / span 2;
+        @include for-desktop {
+            grid-area: span 1 / span 4;
+        }
     }
     &--opacity {
         background-color: rgba(225, 225, 225, 0.5);
